@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>Almanac — Privacy Policy</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  body { margin:0; background:#FAF6F0; color:#2A2622; font:17px/1.55 -apple-system,"SF Pro Text",system-ui,sans-serif; }
+  .wrap { max-width:680px; margin:0 auto; padding:64px 24px; }
+  h1 { font-family:"New York",Georgia,serif; font-weight:600; font-size:34px; margin:0 0 8px; }
+  h2 { font-family:"New York",Georgia,serif; font-weight:500; font-size:22px; margin:32px 0 8px; }
+  p, li { color:#2A2622; }
+  .meta { color:#857869; font-size:13px; margin-bottom:32px; }
+  a { color:#B06B47; }
+</style>
+</head><body><div class="wrap">
+  <h1>Privacy Policy</h1>
+  <p class="meta">Last updated 2026-06-03 · effective 2026-06-03 · hadger.support@gmail.com</p>
+
+  <p>Almanac is built and operated by Hadger studio (ИП Шмигирилов, Kazakhstan). This policy describes how Almanac handles your data. The short version: Almanac collects nothing and sends nothing anywhere.</p>
+
+  <h2>Data Not Collected</h2>
+  <p>Almanac does not collect any data. Specifically:</p>
+  <ul>
+    <li>No account, no email address, no phone number, no name stored outside your device.</li>
+    <li>No analytics, no third-party SDKs, no crash-reporting services, no telemetry.</li>
+    <li>No advertising identifiers (IDFA), no cross-app tracking, no fingerprinting.</li>
+    <li>No location, no microphone, no camera, no contacts, no calendar.</li>
+    <li>No reading of installed apps, no clipboard access, no health record export.</li>
+  </ul>
+
+  <h2>What stays on your iPhone</h2>
+  <p>All data you enter — drink logs, morning check-ins, your profile, symptoms, and goals — is stored locally on your device using Apple's SwiftData framework, protected by full-device encryption. It never leaves your iPhone.</p>
+  <p>A random anonymous UUID is generated on first launch and stored in the iOS Keychain. This identifier never leaves your device and is never transmitted to any server. It is used solely to maintain your entitlement state across app restarts and device reboots.</p>
+  <p>The correlation between alcohol and sleep is computed entirely on-device by a deterministic rule-based engine. No machine learning model downloads, no cloud processing, no server of any kind.</p>
+
+  <h2>Diagnostic logging</h2>
+  <p>Almanac uses Apple's OSLog framework to record usage signposts (for example: "paywall viewed" as a count). These signposts contain no personally identifiable information — no names, no symptoms, no drink amounts. They are accessible only to you via Xcode Instruments or Console.app on your own device; they are never transmitted.</p>
+  <p>Crash data may be collected by Apple through their standard iOS crash-reporting infrastructure if you have opted in to sharing diagnostics with developers in your iOS Settings. Hadger has no additional crash-reporting SDK.</p>
+
+  <h2>Network calls</h2>
+  <p>Almanac uses Apple's StoreKit 2 framework for subscription verification. When you purchase, restore, or the app verifies your subscription status, StoreKit contacts Apple's App Store endpoints. This is Apple-controlled and unavoidable for any paid app on the App Store. Almanac itself initiates no other outbound network call.</p>
+
+  <h2>Exports</h2>
+  <p>You can export your own data (drink logs and check-ins) as a JSON file via the Export my data feature in Settings. This export is created on-device and shared using iOS's standard ShareSheet — Almanac does not transmit it anywhere. You control where it goes.</p>
+
+  <h2>Children</h2>
+  <p>Almanac is rated 17+ due to references to alcohol consumption. It is not designed for children. Almanac does not knowingly collect data from any user, including minors.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>Material changes will be reflected in this page's "Last updated" date. If a change ever affects what Almanac collects, the change will be announced in-app before it takes effect.</p>
+
+  <h2>Contact</h2>
+  <p>Questions or concerns: <a href="mailto:hadger.support@gmail.com">hadger.support@gmail.com</a>.</p>
+
+  <p><a href="/almanac/">← back to Almanac</a></p>
+</div></body></html>

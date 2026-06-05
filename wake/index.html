@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wake — your sleep, explained.</title>
+<meta name="description" content="Wake reads the sleep data your Apple Watch already wrote and answers, in two sentences, why you woke up tired today. On-device. Nothing recorded.">
+<style>
+  :root {
+    --bg: #F8F4EE;
+    --fg: #1B1816;
+    --muted: #6B645B;
+    --accent: #5A6B7A;
+    --ember: #A8481C;
+    --line: #E1DCD4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1A1816;
+      --fg: #F5F4F2;
+      --muted: #AEAAA4;
+      --accent: #8A9BAA;
+      --ember: #A8481C;
+      --line: #3A352F;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 17px/1.55 ui-serif, "New York", Georgia, serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+  .hadger {
+    font: italic 14px ui-serif, "New York", Georgia, serif;
+    letter-spacing: 1.5px;
+    color: var(--ember);
+    margin-bottom: 48px;
+  }
+  h1 {
+    font: 600 36px/1.2 -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+    margin: 0 0 24px;
+    letter-spacing: -0.02em;
+  }
+  .lede {
+    font-size: 21px;
+    line-height: 1.5;
+    margin: 0 0 32px;
+    color: var(--fg);
+  }
+  p { margin: 0 0 20px; }
+  .muted { color: var(--muted); }
+  .nav {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    font: 14px -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  .nav a {
+    color: var(--accent);
+    margin-right: 20px;
+    text-decoration: none;
+  }
+  .nav a:hover { text-decoration: underline; }
+  .card {
+    margin: 32px 0;
+    padding: 24px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.5);
+  }
+  @media (prefers-color-scheme: dark) {
+    .card { background: rgba(255, 255, 255, 0.04); }
+  }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="hadger">hadger</div>
+  <h1>Wake</h1>
+  <p class="lede">Your sleep, explained.</p>
+  <p>Wake reads what your Apple Watch already wrote to HealthKit and answers the only question that matters in the morning: <em>why do you feel like this today?</em> Two sentences. On-device. Nothing recorded.</p>
+
+  <div class="card">
+    <p><strong>What Wake reads</strong></p>
+    <p class="muted">Sleep stages, heart rate, HRV, resting heart rate — five HealthKit fields. Read-only. Your 30-day baseline is computed and stored locally.</p>
+  </div>
+
+  <div class="card">
+    <p><strong>What Wake never does</strong></p>
+    <p class="muted">Record audio. Send your sleep data anywhere. Streak you, badge you, or notify you more than once a day.</p>
+  </div>
+
+  <p>Wake's explanation runs entirely on your iPhone via Apple Intelligence (FoundationModels). There is no account, no server, no cloud. Apple Watch required.</p>
+
+  <p class="muted">Coming to the App Store. Made by <a href="https://hadger.com/" style="color: var(--accent);">Hadger</a>.</p>
+
+  <nav class="nav">
+    <a href="/wake/privacy/">Privacy</a>
+    <a href="/wake/terms/">Terms</a>
+    <a href="/wake/support/">Support</a>
+    <a href="mailto:hadger.support@gmail.com">Email support</a>
+  </nav>
+</main>
+</body>
+</html>

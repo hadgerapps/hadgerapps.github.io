@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wake — Privacy</title>
+<style>
+  :root { --bg: #F8F4EE; --fg: #1B1816; --muted: #6B645B; --accent: #5A6B7A; --line: #E1DCD4; --ember: #A8481C; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #1A1816; --fg: #F5F4F2; --muted: #AEAAA4; --accent: #8A9BAA; --line: #3A352F; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.55 ui-serif, "New York", Georgia, serif; }
+  .wrap { max-width: 640px; margin: 0 auto; padding: 64px 24px 96px; }
+  .hadger { font: italic 14px ui-serif, "New York", Georgia, serif; letter-spacing: 1.5px; color: var(--ember); margin-bottom: 32px; }
+  h1 { font: 600 32px/1.2 -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif; margin: 0 0 16px; }
+  h2 { font: 600 21px/1.3 -apple-system, BlinkMacSystemFont, sans-serif; margin: 32px 0 12px; }
+  p, li { margin: 0 0 16px; }
+  ul { padding-left: 24px; }
+  .muted { color: var(--muted); }
+  .nav { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--line); font: 14px -apple-system, BlinkMacSystemFont, sans-serif; }
+  .nav a { color: var(--accent); margin-right: 20px; text-decoration: none; }
+  .nav a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="hadger">hadger</div>
+  <h1>Privacy</h1>
+  <p class="muted">Last updated: 2026-05-22</p>
+
+  <h2>What Wake reads</h2>
+  <p>Wake requests <strong>read-only</strong> access to five fields in Apple Health (HealthKit):</p>
+  <ul>
+    <li>Sleep analysis (sleep stages, time in bed, awakenings)</li>
+    <li>Heart rate</li>
+    <li>Heart rate variability (SDNN)</li>
+    <li>Resting heart rate</li>
+  </ul>
+  <p>Wake does not request write access. Wake does not record audio, request the microphone, or access your camera, contacts, calendars, reminders, motion data, or location.</p>
+
+  <h2>Where your data lives</h2>
+  <p>Every read happens on your iPhone. The two-sentence explanation generated each morning is produced locally by Apple Intelligence (FoundationModels). Wake's 30-day baseline is computed and stored locally in SwiftData. <strong>Nothing leaves your device.</strong></p>
+  <p>You can verify this for yourself with a network proxy like Charles or Proxyman. During a complete morning read, Wake makes zero outbound network requests outside of StoreKit (Apple's own purchase API).</p>
+
+  <h2>Third-party services</h2>
+  <p>Wake does not use any third-party analytics SDK. No Firebase, no Amplitude, no Mixpanel, no Sentry, no AppsFlyer, no advertising IDs. Wake uses Apple's StoreKit 2 for purchases and OSLog for first-party diagnostics; neither sends data to any third party.</p>
+
+  <h2>What Apple sees</h2>
+  <p>Purchases route through Apple's App Store as required by the platform. Subscription and lifetime IAP transactions are visible to Apple under their own privacy policy; Wake does not see your Apple ID or payment details.</p>
+
+  <h2>Data retention</h2>
+  <p>If you delete Wake, the locally stored 30-day baseline, generated explanations, and settings are removed from your device with the app. There is no remote store; nothing to delete elsewhere.</p>
+
+  <h2>Children's privacy</h2>
+  <p>Wake is rated 4+ but is not designed for or marketed to children under 13. Wake does not knowingly collect data from any user.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the new version replaces this one at the same URL. The "Last updated" date above will change.</p>
+
+  <h2>Contact</h2>
+  <p>Hadger (ИП ШМИГИРИЛОВ, Kazakhstan). Support: <a href="mailto:hadger.support@gmail.com" style="color: var(--accent);">hadger.support@gmail.com</a>.</p>
+
+  <nav class="nav">
+    <a href="/wake/">Home</a>
+    <a href="/wake/terms/">Terms</a>
+    <a href="/wake/support/">Support</a>
+  </nav>
+</main>
+</body>
+</html>

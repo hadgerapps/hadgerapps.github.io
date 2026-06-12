@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Morsel — which foods your body reacts to, no calories</title>
+<meta name="description" content="A food and feeling diary for iPhone. Log meals the lazy way; after a couple of weeks, Morsel shows which foods your body reacts to — gut, energy, mood, skin, sleep. No calories, no judgment. Everything stays on your iPhone.">
+<link rel="canonical" href="https://hadgerapps.github.io/morsel/">
+<style>
+:root {
+  /* Grounded in Morsel's shipped design tokens (SPEC § Design system / tokens.json) */
+  --paper:       #FBF7F0;   /* warm off-white paper ground */
+  --paperRaised: #F4EEE3;   /* deeper raised paper */
+  --ink:         #1C1A17;   /* warm near-black, serif body + headings */
+  --meta:        #6B635A;   /* warm neutral grey, SF Pro chrome/meta */
+  --hairline:    #E4DCCE;   /* warm hairline divider */
+  --accent:      #B14B2E;   /* the ONE structural accent — food→feeling reaction link */
+  --accentDeep:  #9A3F26;   /* pressed / strong tonal step */
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink);
+  font-family: -apple-system, "SF Pro Text", system-ui, sans-serif; line-height: 1.55; }
+.container { max-width: 720px; margin: 0 auto; padding: 64px 24px; }
+h1 { font-family: "New York", "Iowan Old Style", Georgia, serif;
+  font-size: 56px; font-weight: 600; letter-spacing: -0.015em; margin: 0 0 12px; }
+.lead { font-family: "New York", Georgia, serif; font-size: 21px; font-style: italic;
+  color: var(--meta); max-width: 56ch; margin: 0 0 8px; }
+.sub { font-size: 18px; color: var(--meta); max-width: 60ch; }
+h2 { font-family: "New York", Georgia, serif; font-size: 28px; font-weight: 500;
+  margin: 48px 0 14px; padding-top: 24px; border-top: 1px solid var(--hairline); }
+p { font-size: 17px; max-width: 62ch; }
+.observation { font-family: "New York", Georgia, serif; font-size: 20px;
+  color: var(--ink); border-left: 3px solid var(--accent); padding-left: 16px;
+  margin: 24px 0; max-width: 56ch; }
+.observation .reaction { color: var(--accent); font-style: normal; }
+.cta { display: inline-block; background: var(--ink); color: var(--paper);
+  padding: 12px 24px; border-radius: 12px; text-decoration: none; font-weight: 600;
+  margin-top: 16px; }
+.cta.soon { background: var(--paperRaised); color: var(--meta); cursor: default; }
+.promise { background: var(--paperRaised); padding: 24px; border-radius: 16px; margin-top: 16px; }
+.promise ul { margin: 0; padding-left: 20px; }
+.promise li { margin: 8px 0; font-size: 16px; }
+.faq dt { font-weight: 600; margin-top: 20px; }
+.faq dd { margin: 6px 0 0; color: var(--meta); max-width: 62ch; }
+nav { font-size: 14px; color: var(--meta); }
+nav a { color: var(--accent); text-decoration: none; }
+footer { margin-top: 88px; font-size: 13px; color: var(--meta);
+  padding-top: 24px; border-top: 1px solid var(--hairline); }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <h1>Morsel</h1>
+  <p class="lead">Which foods make you feel bad? Your body knows.</p>
+  <p class="sub">A food &amp; feeling diary for iPhone. Log meals the lazy way — then, after a couple of weeks, see which foods your body reacts to. No calories. No judgment. Everything stays on your phone.</p>
+
+  <p><a class="cta soon" aria-disabled="true">Coming to the App Store</a></p>
+
+  <h2>A food diary that counts nothing</h2>
+  <p>Morsel is the opposite of a calorie counter. You log a meal the lazy way — free text like <em>"yogurt + coffee + toast,"</em> or an optional photo — and Apple's on-device intelligence turns it into food items you confirm. There is no calorie count, no macro split, no weight, no goal, no "good food / bad food." The only numbers in Morsel are your own.</p>
+
+  <h2>A 20-second feeling check-in</h2>
+  <p>Once a day, a quick check-in captures how your body felt across five gentle axes — <strong>gut, energy, mood, skin, sleep</strong> — on soft one-to-five dials. That's it. No streaks to keep, no badges to earn, nothing that punishes a missed day.</p>
+
+  <h2>Then your patterns appear — from your own data</h2>
+  <p>Morsel stays quiet for about two weeks while it gathers signal. Then it surfaces a pattern card built only from what you logged:</p>
+  <p class="observation">On your low-energy days, dairy appeared <span class="reaction">2.4&times; more often</span> than on your good days.</p>
+  <p>It's framed as an observation, never a verdict. The correlation is computed by a rule-based engine on your iPhone — not a cloud model, not a guess — and it's the thing a calorie counter and a plain food journal will never give you: <em>your own</em> food&#8596;feeling patterns, surfaced for trigger foods, bloating, reflux, and the symptoms you actually feel.</p>
+
+  <h2>For people who quit diet apps</h2>
+  <p>Morsel is built for the person who tried MyFitnessPal or Noom and walked away — anyone looking for a food sensitivity tracker, an IBS or FODMAP-style food journal, or a calm intuitive-eating diary that notices patterns instead of ranking your plate. It is a personal-data mirror, not a diagnosis: Morsel never claims to diagnose, treat, or test for any condition. It just shows you what your own logs reveal.</p>
+
+  <h2>Private, literally</h2>
+  <div class="promise">
+    <ul>
+      <li>Meal parsing runs on-device with Apple Intelligence (Foundation Models).</li>
+      <li>The food&#8596;feeling correlation is a rule-based engine that runs on your iPhone.</li>
+      <li>No account, no sign-in, no server, no sync.</li>
+      <li>No analytics SDKs, no tracking, no telemetry.</li>
+      <li>Your meals, photos, and check-ins never leave the device. Verifiable with any network proxy.</li>
+    </ul>
+  </div>
+
+  <h2>Questions</h2>
+  <dl class="faq">
+    <dt>Does Morsel count calories or macros?</dt>
+    <dd>No — and it never will. There is no calorie, macro, weight, or BMI surface anywhere in the app. The only numbers are your feeling dials and the multiplier on a pattern card.</dd>
+
+    <dt>Is this a diagnosis or an intolerance test?</dt>
+    <dd>No. Morsel is a personal food diary that notices patterns in your own data. It is not a medical device and does not diagnose food allergies, intolerances, or any condition. Talk to a clinician about symptoms.</dd>
+
+    <dt>What if my phone can't run Apple Intelligence?</dt>
+    <dd>Morsel works fully without it. If on-device parsing is unavailable, you type or pick food tags by hand — the check-in, the history, and the pattern engine all keep working exactly the same.</dd>
+
+    <dt>Does my data leave my phone?</dt>
+    <dd>No. There is no account and no server. Everything — meals, the optional photo, check-ins, and your patterns — lives on your iPhone. The only network traffic is Apple's App Store for the subscription.</dd>
+
+    <dt>How long until I see a pattern?</dt>
+    <dd>Usually about two weeks. Morsel needs roughly seven days of check-ins, with enough days a food was eaten and enough days it wasn't, before a pattern is trustworthy. Until then a calm "still learning" screen counts you up.</dd>
+  </dl>
+
+  <footer>
+    <nav>
+      <a href="/morsel/privacy/">Privacy</a> &middot; <a href="/morsel/terms/">Terms</a> &middot; <a href="/morsel/support/">Support</a> &middot; <a href="https://hadger.com">Hadger</a>
+    </nav>
+    <p>&copy; 2026 Hadger. Morsel is a food &amp; feeling diary for iPhone (iOS 26+). A personal mirror, not medical advice.</p>
+  </footer>
+
+</div>
+</body>
+</html>

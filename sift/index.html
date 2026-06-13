@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sift — a calm place to set worries down</title>
+<meta name="description" content="A worry journal for iPhone. Dump what's on your mind; Sift quietly sorts it into what to act on, what's noise, and what keeps coming back. No streaks, no judgment. Everything stays on your iPhone.">
+<link rel="canonical" href="https://hadgerapps.github.io/sift/">
+<style>
+:root {
+  /* Grounded in Sift's shipped design tokens (DESIGN.md / tokens.json) */
+  --paper:       #FBF7F0;   /* warm un-bleached paper ground */
+  --paperRaised: #F3ECE0;   /* raised paper (sheet/section) */
+  --ink:         #1C1A17;   /* warm near-black, serif body + headings */
+  --meta:        #514C44;   /* section labels / meta */
+  --metaLight:   #6E6A62;   /* timestamps, counts */
+  --hairline:    #DAD2C4;   /* warm hairline divider */
+  --accent:      #9E4438;   /* the ONE reserved accent — the Act bucket */
+  --accentDeep:  #843629;   /* pressed / strong tonal step */
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink);
+  font-family: -apple-system, "SF Pro Text", system-ui, sans-serif; line-height: 1.55; }
+.container { max-width: 720px; margin: 0 auto; padding: 64px 24px; }
+h1 { font-family: "New York", "Iowan Old Style", Georgia, serif;
+  font-size: 56px; font-weight: 600; letter-spacing: -0.015em; margin: 0 0 12px; }
+.lead { font-family: "New York", Georgia, serif; font-size: 21px; font-style: italic;
+  color: var(--meta); max-width: 56ch; margin: 0 0 8px; }
+.sub { font-size: 18px; color: var(--meta); max-width: 60ch; }
+h2 { font-family: "New York", Georgia, serif; font-size: 28px; font-weight: 500;
+  margin: 48px 0 14px; padding-top: 24px; border-top: 1px solid var(--hairline); }
+p { font-size: 17px; max-width: 62ch; }
+.observation { font-family: "New York", Georgia, serif; font-size: 20px;
+  color: var(--ink); border-left: 3px solid var(--accent); padding-left: 16px;
+  margin: 24px 0; max-width: 56ch; }
+.observation .act { color: var(--accent); font-style: normal; }
+.cta { display: inline-block; background: var(--ink); color: var(--paper);
+  padding: 12px 24px; border-radius: 12px; text-decoration: none; font-weight: 600;
+  margin-top: 16px; }
+.cta.soon { background: var(--paperRaised); color: var(--meta); cursor: default; }
+.promise { background: var(--paperRaised); padding: 24px; border-radius: 16px; margin-top: 16px; }
+.promise ul { margin: 0; padding-left: 20px; }
+.promise li { margin: 8px 0; font-size: 16px; }
+.faq dt { font-weight: 600; margin-top: 20px; }
+.faq dd { margin: 6px 0 0; color: var(--meta); max-width: 62ch; }
+nav { font-size: 14px; color: var(--meta); }
+nav a { color: var(--accent); text-decoration: none; }
+footer { margin-top: 88px; font-size: 13px; color: var(--metaLight);
+  padding-top: 24px; border-top: 1px solid var(--hairline); }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <h1>Sift</h1>
+  <p class="lead">Get it out of your head. Wake to a smaller list.</p>
+  <p class="sub">A worry journal for iPhone. Dump what's on your mind — then let Sift quietly sort it into what to act on, what's noise, and what keeps coming back. No streaks. No judgment. Everything stays on your phone.</p>
+
+  <p><a class="cta soon" aria-disabled="true">Coming to the App Store</a></p>
+
+  <h2>A place to set worries down</h2>
+  <p>Sift is the opposite of one more thing to keep up with. When your head is full, you dump it out — a quick list of worries, typed or spoken — and that's the whole job. There is no streak to protect, no badge to earn, no pet to feed, nothing that punishes a missed night. Just a calm page that holds what you set down.</p>
+
+  <h2>Then Sift settles the list</h2>
+  <p>Overnight — or instantly, when you tap <strong>"Settle now"</strong> — Sift sorts each worry into three calm buckets, so the morning version of your list is smaller and clearer than the version you went to bed with:</p>
+  <p class="observation"><span class="act">Act</span> &middot; something to actually do &nbsp;·&nbsp; Noise &middot; let it go &nbsp;·&nbsp; Recurring &middot; a theme that keeps coming back</p>
+  <p>The sorting runs on a rule-based engine and Apple's on-device intelligence on your iPhone — not a cloud model, not a guess. Over weeks, the Recurring bucket is the quiet payoff: <em>"money has come up 6 times,"</em> <em>"work boundaries, again"</em> — the patterns in what you worry about, surfaced from your own writing.</p>
+
+  <h2>For people who overthink at night</h2>
+  <p>Sift is built for the person who lies awake with a racing mind, who has tried writing worries in Notes and lost the thread, who wants a brain dump for overthinking or a calm worry journal without a cloud account behind it. It is a calm sorting tool, not therapy: Sift never claims to diagnose, treat, or reduce anxiety or any condition. It just helps you set worries down and see them sorted.</p>
+
+  <h2>Private, literally</h2>
+  <div class="promise">
+    <ul>
+      <li>All sorting runs on-device with Apple Intelligence (Foundation Models) and a rule-based engine.</li>
+      <li>Voice is live, on-device dictation only — no audio file is ever recorded or stored.</li>
+      <li>No account, no sign-in, no server, no sync.</li>
+      <li>No analytics SDKs, no tracking, no telemetry.</li>
+      <li>Your worries never leave the device. Works fully in airplane mode; verifiable with any network proxy.</li>
+    </ul>
+  </div>
+
+  <h2>Questions</h2>
+  <dl class="faq">
+    <dt>Is Sift therapy, or a diagnosis?</dt>
+    <dd>No. Sift is a calm worry-sorting and journaling tool. It is not therapy, not a medical device, and it does not diagnose, treat, or claim to reduce anxiety or any condition. If you are struggling, please talk to a qualified professional.</dd>
+
+    <dt>Does my data leave my phone?</dt>
+    <dd>No. There is no account and no server. Your worries, the settled buckets, and your recurring insights all live on your iPhone. The only network traffic is Apple's App Store for the subscription — you can confirm this in airplane mode or with a network proxy.</dd>
+
+    <dt>Does Sift record my voice?</dt>
+    <dd>No. Voice capture is live, on-device dictation only. The words become text on your phone as you speak; no audio file is ever created or stored.</dd>
+
+    <dt>What if my phone can't run Apple Intelligence?</dt>
+    <dd>Sift works fully without it. Capture and a coarser "Basic sort" still run on-device; you can also bucket worries by hand. The Recurring insights are richer on devices with Apple Intelligence, but the core stays calm and usable everywhere.</dd>
+
+    <dt>Do I have to use it every day?</dt>
+    <dd>No. There are no streaks and nothing to keep up. Missing a night costs you nothing. Sift is more valuable each morning than it was the night before — that's the only reason to come back.</dd>
+  </dl>
+
+  <footer>
+    <nav>
+      <a href="/sift/privacy/">Privacy</a> &middot; <a href="/sift/terms/">Terms</a> &middot; <a href="/sift/support/">Support</a> &middot; <a href="https://hadger.com">Hadger</a>
+    </nav>
+    <p>&copy; 2026 Hadger. Sift is a worry journal for iPhone (iOS 26+). A calm sorting tool, not therapy or medical advice.</p>
+  </footer>
+
+</div>
+</body>
+</html>

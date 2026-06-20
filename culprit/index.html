@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Culprit — which product on your shelf is the likely culprit for a breakout</title>
+<meta name="description" content="A skincare diary for iPhone. Log your shelf and a 20-second daily skin note; after about a week, Culprit names the product to suspect for your breakouts — from your own logs, on your phone. Nothing leaves your device. No cloud, no face-scan AI.">
+<link rel="canonical" href="https://hadgerapps.github.io/culprit/">
+<style>
+:root {
+  /* Grounded in Culprit's shipped design tokens (.design-system/culprit-phase1-20260610/tokens/tokens.json) */
+  --shelf:       #F4EEE3;   /* bone-paper shelf ground */
+  --surface:     #FBF7EF;   /* raised card / bottle plate / sheet surface */
+  --ink:         #1E1B17;   /* near-black ink — serif body + headings (14.7:1 AAA) */
+  --meta:        #5B544A;   /* warm neutral grey — SF Pro chrome/meta (6.3:1 AA) */
+  --hairline:    #E0D8C9;   /* warm hairline divider */
+  --accent:      #8F5345;   /* the ONE structural accent — the suspect link (AA 5.1:1) */
+  --accentTint:  #EFE2DC;   /* 8% clay wash */
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--shelf); color: var(--ink);
+  font-family: -apple-system, "SF Pro Text", system-ui, sans-serif; line-height: 1.55; }
+.container { max-width: 720px; margin: 0 auto; padding: 64px 24px; }
+h1 { font-family: "New York", "Iowan Old Style", Georgia, serif;
+  font-size: 56px; font-weight: 600; letter-spacing: -0.015em; margin: 0 0 12px; }
+.lead { font-family: "New York", Georgia, serif; font-size: 21px; font-style: italic;
+  color: var(--meta); max-width: 56ch; margin: 0 0 8px; }
+.sub { font-size: 18px; color: var(--meta); max-width: 60ch; }
+h2 { font-family: "New York", Georgia, serif; font-size: 28px; font-weight: 500;
+  margin: 48px 0 14px; padding-top: 24px; border-top: 1px solid var(--hairline); }
+p { font-size: 17px; max-width: 62ch; }
+.observation { font-family: "New York", Georgia, serif; font-size: 20px;
+  color: var(--ink); border-left: 3px solid var(--accent); padding-left: 16px;
+  margin: 24px 0; max-width: 56ch; }
+.observation .suspect { color: var(--accent); font-style: normal; }
+.cta { display: inline-block; background: var(--ink); color: var(--shelf);
+  padding: 12px 24px; border-radius: 12px; text-decoration: none; font-weight: 600;
+  margin-top: 16px; }
+.cta.soon { background: var(--surface); color: var(--meta); cursor: default; }
+.promise { background: var(--surface); padding: 24px; border-radius: 18px; margin-top: 16px;
+  border: 1px solid var(--hairline); }
+.promise ul { margin: 0; padding-left: 20px; }
+.promise li { margin: 8px 0; font-size: 16px; }
+.faq dt { font-weight: 600; margin-top: 20px; }
+.faq dd { margin: 6px 0 0; color: var(--meta); max-width: 62ch; }
+nav { font-size: 14px; color: var(--meta); }
+nav a { color: var(--accent); text-decoration: none; }
+footer { margin-top: 88px; font-size: 13px; color: var(--meta);
+  padding-top: 24px; border-top: 1px solid var(--hairline); }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <h1>Culprit</h1>
+  <p class="lead">Which product on your shelf is the likely culprit?</p>
+  <p class="sub">A skincare diary for iPhone. Log your shelf and a quick daily skin note — then, after about a week, Culprit names the product to suspect for your breakouts. Nothing leaves your iPhone. No cloud. No face-scan AI.</p>
+
+  <p><a class="cta soon" aria-disabled="true">Coming to the App Store</a></p>
+
+  <h2>Log your shelf, the calm way</h2>
+  <p>Culprit starts with your shelf — the skincare products you actually own and use — kept in a simple AM/PM routine. You add a product in a tap or two; there is no scanning to fight with and nothing to set up before you can start. The shelf is the calm picture of what you put on your skin, and it is yours alone.</p>
+
+  <h2>A 20-second daily skin note</h2>
+  <p>Once a day, a quick note captures how your skin reacted on three plain levels — <strong>clear</strong>, <strong>a little reactive</strong>, or <strong>a breakout</strong> — with an optional area and an optional photo. The photo is a memory aid for your eyes only; it stays on your iPhone and is never uploaded. There are no streaks to keep and no badges to earn.</p>
+
+  <h2>Then the suspect appears — from your own data</h2>
+  <p>Culprit stays quiet for about a week while it gathers signal. Then it surfaces a single plain-language read built only from what you logged:</p>
+  <p class="observation">Niacinamide serum was logged on <span class="suspect">4 of your 5 most reactive days</span>.</p>
+  <p>It names a product to <em>suspect</em>, never a skin condition to diagnose. The read is computed by a rule-based engine on your iPhone — not a cloud model, not a guess — and it is the thing a notes app and a spreadsheet will never give you: <em>your own</em> product&#8596;reaction pattern, surfaced calmly.</p>
+
+  <h2>For people who track this by hand today</h2>
+  <p>Culprit is built for the person who already runs the manual "introduce one product, watch two weeks, log the reaction" routine in Notes or a spreadsheet — and who distrusts the cloud face-scan apps. It is a cosmetic product-reaction tracker, not a medical app: it points at a product, never at a condition, and is not a substitute for a dermatologist. It just shows you what your own logs reveal.</p>
+
+  <h2>Private, literally</h2>
+  <div class="promise">
+    <ul>
+      <li>The product&#8596;reaction correlation is a rule-based engine that runs on your iPhone.</li>
+      <li>No account, no sign-in, no server, no sync, no cloud.</li>
+      <li>No face-scan, no skin-scan AI, no cross-app tracking.</li>
+      <li>No analytics SDKs, no telemetry. The optional photo never leaves the device.</li>
+      <li>Your shelf, your reactions, and your photos never leave your iPhone. Verifiable with any network proxy.</li>
+    </ul>
+  </div>
+
+  <h2>Questions</h2>
+  <dl class="faq">
+    <dt>Does Culprit diagnose my skin?</dt>
+    <dd>No. Culprit is a cosmetic product-reaction tracker that notices patterns in your own logs. It names a product to suspect, never a skin condition, and it is not a medical device. For anything about your skin, talk to a dermatologist.</dd>
+
+    <dt>Does my data leave my phone?</dt>
+    <dd>No. There is no account and no server. Everything — your shelf, your daily reactions, and the optional photo — lives on your iPhone. The only network traffic is Apple's App Store for the subscription.</dd>
+
+    <dt>Do I need to scan my face or my products?</dt>
+    <dd>No. Culprit is manual-entry-first: you add products and log reactions by tapping. There is no face-scan and no required camera step — the optional photo is just a memory aid you can skip.</dd>
+
+    <dt>How long until I see a suspect?</dt>
+    <dd>Usually about one to two weeks. Culprit needs roughly seven days of reactions, with enough reactive days and enough calm days, before a read is trustworthy. Until then a calm "Day N of learning" screen counts you up.</dd>
+
+    <dt>What do I get free, and what is paid?</dt>
+    <dd>Your shelf, your AM/PM routine, the 20-second daily reaction note (with the optional photo), and your day-by-day log are free, always. A subscription or the one-time lifetime unlock adds the ranked suspect read, each product's pattern detail, and your full history over time.</dd>
+  </dl>
+
+  <footer>
+    <nav>
+      <a href="/culprit/privacy/">Privacy</a> &middot; <a href="/culprit/terms/">Terms</a> &middot; <a href="/culprit/support/">Support</a> &middot; <a href="https://hadger.com">Hadger</a>
+    </nav>
+    <p>&copy; 2026 Hadger. Culprit is a skincare diary for iPhone (iOS 26+). A cosmetic product-reaction tracker, not medical advice.</p>
+  </footer>
+
+</div>
+</body>
+</html>

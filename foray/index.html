@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Foray — a calm way to get outside and notice what's already there</title>
+<meta name="description" content="A 100%-on-device outdoor exploration game for iPhone. Ask for a round and your phone composes small, abstract discovery quests to find in your own surroundings. No map, no destination, no coordinate — Foray never points you anywhere. Nothing leaves your phone.">
+<link rel="canonical" href="https://hadgerapps.github.io/foray/">
+<style>
+:root {
+  /* Shipped Foray duotone tokens — muted two-ink riso on warm-neutral paper.
+     Source: SPEC.md § Design system / tokens.json (the executed register). */
+  --paper:    #EFE9DD;   /* warm-neutral paper ground */
+  --surface:  #E4DCCB;   /* paperDeep — recessed card / sheet surface */
+  --ink:      #1F3A36;   /* deep spruce — primary ink (CR 10.12 AAA on paper) */
+  --meta:     #3E5A55;   /* inkSoft — secondary text (CR 6.21 AA) */
+  --hairline: #8AA09B;   /* inkFaint — hairline divider (decorative) */
+  --accent:   #CD7A33;   /* muted marigold — fills/marks only (non-text) */
+  --accent-text: #9A5418; /* accentText — AA-compliant marigold for links (CR 4.75) */
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink);
+  font-family: -apple-system, "SF Pro Text", system-ui, sans-serif; line-height: 1.55; }
+.container { max-width: 720px; margin: 0 auto; padding: 64px 24px; }
+h1 { font-size: 56px; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 12px; }
+.lead { font-size: 21px; color: var(--meta); max-width: 56ch; margin: 0 0 8px; }
+.sub { font-size: 18px; color: var(--meta); max-width: 60ch; }
+h2 { font-size: 28px; font-weight: 600; margin: 48px 0 14px;
+  padding-top: 24px; border-top: 1px solid var(--hairline); }
+p { font-size: 17px; max-width: 62ch; }
+.quest { font-size: 20px; color: var(--ink); border-left: 3px solid var(--accent);
+  padding-left: 16px; margin: 24px 0; max-width: 56ch; }
+.cta { display: inline-block; background: var(--ink); color: var(--paper);
+  padding: 12px 24px; border-radius: 12px; text-decoration: none; font-weight: 600; margin-top: 16px; }
+.cta.soon { background: var(--surface); color: var(--meta); cursor: default; border: 1px solid var(--hairline); }
+.promise { background: var(--surface); padding: 24px; border-radius: 18px; margin-top: 16px; border: 1px solid var(--hairline); }
+.promise ul { margin: 0; padding-left: 20px; }
+.promise li { margin: 8px 0; font-size: 16px; }
+.faq dt { font-weight: 600; margin-top: 20px; }
+.faq dd { margin: 6px 0 0; color: var(--meta); max-width: 62ch; }
+nav { font-size: 14px; color: var(--meta); }
+nav a { color: var(--accent-text); text-decoration: none; }
+footer { margin-top: 88px; font-size: 13px; color: var(--meta); padding-top: 24px; border-top: 1px solid var(--hairline); }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <h1>Foray</h1>
+  <p class="lead">A calm way to get outside and notice what's already there.</p>
+  <p class="sub">A 100%-on-device exploration game for iPhone. Ask for a round and your phone composes a handful of small, abstract discovery quests to find in your own surroundings. No map, no destination, no coordinate. Nothing leaves your iPhone.</p>
+
+  <p><a class="cta soon" aria-disabled="true">Coming to the App Store</a></p>
+
+  <h2>A quest composed for this moment</h2>
+  <p>Tap "Start a round" and Foray composes a few abstract, relative quests — composed for right now and right here:</p>
+  <p class="quest">a door older than you · somewhere you can hear water · a red thing above eye level</p>
+  <p>You go explore and find them wherever you happen to be — wander a nearby street, a park, a trail, anywhere. The fun is the moment the task lands and you look up at your actual surroundings differently. Foray doesn't send you somewhere — it gives you a way of looking at where you already are.</p>
+
+  <h2>It confirms you got outside — it never points anywhere</h2>
+  <p>Foray uses your iPhone's location only to confirm you actually moved from where you started, computed quietly on your device. There is no target to walk to, no coordinate shown, and no list of real places. That is the whole point — and it is why Foray is safe by design: because it never hands you a place to go, it can't send you somewhere you shouldn't be.</p>
+
+  <h2>A place-less keepsake to look back on</h2>
+  <p>Each round's photos compose into a calm, printed-poster-style keepsake — with no map and no coordinates, on purpose. Even the reward refuses to show a location.</p>
+
+  <h2>Private, literally</h2>
+  <div class="promise">
+    <ul>
+      <li>Quests are composed entirely on your iPhone — Apple Intelligence where available, a built-in quest library everywhere else.</li>
+      <li>No account, no sign-in, no server, no sync, no cloud.</li>
+      <li>No networked AI, no analytics SDKs, no telemetry, no cross-app tracking.</li>
+      <li>Your location is never stored beyond the round and never sent. Your photos stay on your device.</li>
+      <li>The only network traffic is Apple's App Store for the subscription. Verifiable with any network proxy.</li>
+    </ul>
+  </div>
+
+  <h2>Questions</h2>
+  <dl class="faq">
+    <dt>Does Foray send me to a specific place?</dt>
+    <dd>No. Foray never gives you a target coordinate, a map, or a real-place lookup. The quests are abstract ("a door older than you"), you choose where to roam, and your location is used only to confirm you went outside.</dd>
+
+    <dt>Does my data leave my phone?</dt>
+    <dd>No. There is no account and no server. Your quests, your location reads, and your photos stay on your iPhone. The only network traffic is Apple's App Store for the subscription.</dd>
+
+    <dt>Do I need Apple Intelligence?</dt>
+    <dd>No. Foray's built-in quest library is the full experience. On devices with Apple Intelligence, Foray uses the on-device FoundationModels framework to vary quests further — but it is never required and never a "degraded" experience without it.</dd>
+
+    <dt>What if I can't reach a quest?</dt>
+    <dd>Tap "couldn't reach it" — no penalty, no streak to break. The round still completes on what you did find. Nobody is ever pushed to take a risk to keep a round alive.</dd>
+
+    <dt>What do I get free, and what is paid?</dt>
+    <dd>One full round a day is free, always. A subscription or the one-time lifetime unlock adds unlimited rounds, all themed packs, home-neighbourhood mode, custom round length, and your full photo-foray history.</dd>
+  </dl>
+
+  <footer>
+    <nav>
+      <a href="/foray/privacy/">Privacy</a> &middot; <a href="/foray/terms/">Terms</a> &middot; <a href="/foray/support/">Support</a> &middot; <a href="https://hadger.com">Hadger</a>
+    </nav>
+    <p>&copy; 2026 Hadger. Foray is an on-device outdoor exploration game for iPhone (iOS 26+). A calm game — not a fitness, health, or navigation app.</p>
+  </footer>
+
+</div>
+</body>
+</html>

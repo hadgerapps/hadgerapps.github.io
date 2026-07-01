@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lila — the ancient game of self-knowledge, made private</title>
+<meta name="description" content="A private, 100%-on-device adaptation of Leela, the traditional 72-square board game of self-knowledge. Name a question, walk the board, and meet an honest Mirror that won't flatter you. Your intentions and answers never leave your iPhone.">
+<link rel="canonical" href="https://hadgerapps.github.io/lila/">
+<style>
+:root {
+  --ground:   #14102B;   /* deep indigo night ground */
+  --surface:  #1C173A;   /* recessed card / sheet surface */
+  --ink:      #ECE5D8;   /* warm ivory — primary ink (AAA on ground) */
+  --meta:     #B8AFC9;   /* secondary text (AAA) */
+  --hairline: #3A3363;   /* divider */
+  --gold:     #CBA95E;   /* the Mirror's voice — the one hero accent */
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--ground); color: var(--ink);
+  font-family: -apple-system, "SF Pro Text", system-ui, sans-serif; line-height: 1.55; }
+.container { max-width: 720px; margin: 0 auto; padding: 64px 24px; }
+h1 { font-size: 56px; font-weight: 800; letter-spacing: -0.02em; margin: 0 0 12px;
+  font-family: "New York", Georgia, serif; color: var(--gold); }
+.lead { font-size: 21px; color: var(--meta); max-width: 56ch; margin: 0 0 8px; }
+.sub { font-size: 18px; color: var(--meta); max-width: 60ch; }
+h2 { font-size: 28px; font-weight: 600; margin: 48px 0 14px;
+  padding-top: 24px; border-top: 1px solid var(--hairline);
+  font-family: "New York", Georgia, serif; }
+p { font-size: 17px; max-width: 62ch; }
+.quest { font-size: 20px; color: var(--ink); border-left: 3px solid var(--gold);
+  padding-left: 16px; margin: 24px 0; max-width: 56ch; font-style: italic; }
+.cta { display: inline-block; background: var(--gold); color: var(--ground);
+  padding: 12px 24px; border-radius: 12px; text-decoration: none; font-weight: 600; margin-top: 16px; }
+.cta.soon { background: var(--surface); color: var(--meta); cursor: default; border: 1px solid var(--hairline); }
+.promise { background: var(--surface); padding: 24px; border-radius: 18px; margin-top: 16px; border: 1px solid var(--hairline); }
+.promise ul { margin: 0; padding-left: 20px; }
+.promise li { margin: 8px 0; font-size: 16px; }
+.faq dt { font-weight: 600; margin-top: 20px; }
+.faq dd { margin: 6px 0 0; color: var(--meta); max-width: 62ch; }
+nav { font-size: 14px; color: var(--meta); }
+nav a { color: var(--gold); text-decoration: none; }
+footer { margin-top: 88px; font-size: 13px; color: var(--meta); padding-top: 24px; border-top: 1px solid var(--hairline); }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <h1>Lila</h1>
+  <p class="lead">The ancient game of self-knowledge, made private.</p>
+  <p class="sub">A 100%-on-device adaptation of Leela — the traditional 72-square board game of self-knowledge. Name a question, walk the board, and meet a Mirror that won't flatter you. Every reading is composed on your iPhone.</p>
+
+  <p><a class="cta soon" aria-disabled="true">Coming to the App Store</a></p>
+
+  <h2>Name what you're working through</h2>
+  <p>State an Intention — a real question or a knot you're stuck on — confirm you'll look without masks, and roll. You enter the board only on a 6, the symbol of Birth. Then you move square by square through states of mind: virtues that lift you, shadows that pull you down.</p>
+  <p class="quest">Delusion isn't always confusion — sometimes it's a small service you perform for yourself, so you don't have to act on what you'd see clearly.</p>
+
+  <h2>Choose the Mirror's voice</h2>
+  <p>Gentle is supportive and honest. Unsparing is direct and unflinching — it names what you avoid. Neither is ever cruel, and you choose every journey. On every square the Mirror gives you a reading tied to your own question and asks 1–2 questions. You answer in your own words.</p>
+
+  <h2>A Journal that never loses your reflection</h2>
+  <p>Every journey is saved to a private Journal. Read back what you wrote weeks or months later, and see how the same question lands differently now.</p>
+
+  <h2>Private, literally</h2>
+  <div class="promise">
+    <ul>
+      <li>Every reading is composed on your iPhone — Apple Intelligence where available, a hand-authored library everywhere else.</li>
+      <li>No account, no sign-in, no server, no sync, no cloud.</li>
+      <li>No networked AI, no analytics SDKs, no telemetry, no cross-app tracking.</li>
+      <li>Your intentions and your answers never leave your device.</li>
+      <li>The only network traffic is Apple's App Store for the subscription. Verifiable with any network proxy.</li>
+    </ul>
+  </div>
+
+  <h2>Questions</h2>
+  <dl class="faq">
+    <dt>Is this therapy?</dt>
+    <dd>No. Lila is a contemplative board game, not a substitute for professional support. If something feels heavier than a game can hold, please reach out to a real person.</dd>
+
+    <dt>Does my data leave my phone?</dt>
+    <dd>No. There is no account and no server. Your intentions and your written answers stay on your iPhone. The only network traffic is Apple's App Store for the subscription.</dd>
+
+    <dt>Do I need Apple Intelligence?</dt>
+    <dd>No. Lila's hand-authored 72-square library is the full experience. On devices with Apple Intelligence, the on-device FoundationModels framework personalises a reading to your Intention — but it is never required and never a "degraded" experience without it.</dd>
+
+    <dt>What do I get free, and what is paid?</dt>
+    <dd>One complete journey is free. A subscription or the one-time lifetime unlock adds unlimited journeys, the Unsparing Mirror, your full Journal, and new lenses over the traditional board.</dd>
+  </dl>
+
+  <footer>
+    <nav>
+      <a href="/lila/privacy/">Privacy</a> &middot; <a href="/lila/terms/">Terms</a> &middot; <a href="/lila/support/">Support</a> &middot; <a href="https://hadger.com">Hadger</a>
+    </nav>
+    <p>&copy; 2026 Hadger. Lila is an on-device contemplative board game for iPhone (iOS 26+). A game — not therapy, medical, or health advice.</p>
+  </footer>
+
+</div>
+</body>
+</html>

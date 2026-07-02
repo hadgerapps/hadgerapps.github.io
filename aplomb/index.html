@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aplomb — a live rehearsal meter for the talk that matters</title>
+<meta name="description" content="A live rehearsal meter for an interview answer, a toast, or a pitch. Watch your pace, pauses, and filler words on a calm on-device meter. Audio is never recorded — Aplomb works identically in Airplane Mode. iPhone, iOS 26+.">
+<link rel="canonical" href="https://hadgerapps.github.io/aplomb/">
+<style>
+:root {
+  --ground:   #121110;   /* studio-dark ground — warm undertone, not OLED void */
+  --surface:  #1C1A18;   /* recessed card / sheet surface */
+  --ink:      #F0EBE4;   /* warm off-white — primary ink (AAA on ground) */
+  --meta:     #B7B0A6;   /* secondary text (AAA) */
+  --hairline: #3A3632;   /* divider */
+  --amber:    #E59A3C;   /* On-Air amber — the one hero accent (live state) */
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--ground); color: var(--ink);
+  font-family: -apple-system, "SF Pro Text", system-ui, sans-serif; line-height: 1.55; }
+.container { max-width: 720px; margin: 0 auto; padding: 64px 24px; }
+h1 { font-size: 56px; font-weight: 800; letter-spacing: -0.02em; margin: 0 0 12px;
+  font-family: "New York", Georgia, serif; color: var(--ink); }
+.lead { font-size: 21px; color: var(--meta); max-width: 56ch; margin: 0 0 8px; }
+.sub { font-size: 18px; color: var(--meta); max-width: 60ch; }
+h2 { font-size: 28px; font-weight: 600; margin: 48px 0 14px;
+  padding-top: 24px; border-top: 1px solid var(--hairline);
+  font-family: "New York", Georgia, serif; }
+p { font-size: 17px; max-width: 62ch; }
+.onair { display:inline-flex; align-items:center; gap:8px; font-size:14px;
+  letter-spacing:.08em; text-transform:uppercase; color:var(--amber); margin: 24px 0; }
+.onair .dot { width:10px; height:10px; border-radius:50%; background:var(--amber); }
+.cta { display: inline-block; background: var(--surface); color: var(--meta);
+  padding: 12px 24px; border-radius: 12px; text-decoration: none; font-weight: 600;
+  margin-top: 16px; border: 1px solid var(--hairline); cursor: default; }
+.promise { background: var(--surface); padding: 24px; border-radius: 18px; margin-top: 16px; border: 1px solid var(--hairline); }
+.promise ul { margin: 0; padding-left: 20px; }
+.promise li { margin: 8px 0; font-size: 16px; }
+.faq dt { font-weight: 600; margin-top: 20px; }
+.faq dd { margin: 6px 0 0; color: var(--meta); max-width: 62ch; }
+nav { font-size: 14px; color: var(--meta); }
+nav a { color: var(--amber); text-decoration: none; }
+footer { margin-top: 88px; font-size: 13px; color: var(--meta); padding-top: 24px; border-top: 1px solid var(--hairline); }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <h1>Aplomb</h1>
+  <p class="lead">Rehearse it out loud.</p>
+  <p class="sub">A live rehearsal meter for the talk that matters — an interview answer, a toast, a pitch. Put the phone in front of you, pick the moment, and watch yourself settle. Everything is analyzed on your iPhone.</p>
+
+  <p><a class="cta" aria-disabled="true">Coming to the App Store</a></p>
+
+  <h2>An instrument, not a course</h2>
+  <p>No lessons to tap through, no quiz, no AI coach persona. You pick the moment and start talking. A calm dial shows your words per minute against the comfortable speaking band. A quiet counter notes filled pauses. Long silences render as space, not alarms.</p>
+  <p class="onair"><span class="dot"></span> Rehearsing — 1:12 · 148 wpm</p>
+
+  <h2>One honest page</h2>
+  <p>When you stop, you get a single report: your pace curve, your pause map, your filler count, and how this run compares to your last one. Numbers and curves — never a grade, never a judgment.</p>
+
+  <h2>Watch yourself settle</h2>
+  <p>Rehearse the same answer a few times and the convergence view overlays your runs — oldest dim, newest bright — so you can see a week of practice actually working.</p>
+
+  <h2>Private, literally</h2>
+  <div class="promise">
+    <ul>
+      <li>Your speech is analyzed live by Apple's on-device Speech frameworks.</li>
+      <li>The audio is never recorded, never stored, and never sent anywhere — there is no audio file and no playback of past runs.</li>
+      <li>No account, no sign-in, no server, no analytics, no cross-app tracking.</li>
+      <li>Put the phone in Airplane Mode and Aplomb works identically.</li>
+      <li>The only network traffic is Apple's App Store for the subscription. Verifiable with any network proxy.</li>
+    </ul>
+  </div>
+
+  <h2>Questions</h2>
+  <dl class="faq">
+    <dt>Is my audio recorded?</dt>
+    <dd>No. Speech is measured live on your iPhone and the audio is never recorded, stored, or transmitted. Aplomb works identically in Airplane Mode.</dd>
+
+    <dt>Is this therapy?</dt>
+    <dd>No. Aplomb rehearses a skill. It is not therapy, speech therapy, or medical advice, and makes no clinical claim.</dd>
+
+    <dt>Does my data leave my phone?</dt>
+    <dd>No. There is no account and no server. Your rehearsal metrics stay on your iPhone; transcript text is kept only if you turn that setting on. The only network traffic is Apple's App Store for the subscription.</dd>
+
+    <dt>What do I get free, and what is paid?</dt>
+    <dd>The first full rehearsal and its report are free, and your history is always free to read. A subscription or the one-time lifetime unlock adds unlimited rehearsals and the convergence view.</dd>
+  </dl>
+
+  <footer>
+    <nav>
+      <a href="/aplomb/privacy/">Privacy</a> &middot; <a href="/aplomb/terms/">Terms</a> &middot; <a href="/aplomb/support/">Support</a> &middot; <a href="https://hadger.com">Hadger</a>
+    </nav>
+    <p>&copy; 2026 Hadger. Aplomb is an on-device public-speaking rehearsal instrument for iPhone (iOS 26+). Not therapy, medical, or health advice.</p>
+  </footer>
+
+</div>
+</body>
+</html>

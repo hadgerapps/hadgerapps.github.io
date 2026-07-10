@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mortise — a compatibility check where no server ever sees your answers</title>
+<meta name="description" content="A serious compatibility check for couples and business partners deciding something real. Both people answer a substantial questionnaire on their own iPhone; results cross phone-to-phone, encrypted. No server, no account, no analytics. Premarital compatibility, cofounder fit, and business-partner compatibility. Private by design, and free.">
+<link rel="canonical" href="https://hadgerapps.github.io/mortise/">
+<style>
+:root {
+  color-scheme: light dark;
+  /* Shipped Mortise tokens: "Two Inks, One Joint" duotone on a joiner's bench.
+     Source: .design-system/20260709-phase1/tokens/tokens.json (the executed register). */
+  --bench:     #ECEAE4;  /* warm bench paper ground */
+  --raised:    #F5F3ED;  /* raised card / sheet surface */
+  --ink:       #1A1815;  /* primary ink */
+  --meta:      #5C574E;  /* secondary text (AA on bench) */
+  --hairline:  #D6D2C9;  /* hairline divider */
+  --initiator: #1F6C74;  /* ink A: the Initiator's half of the joint (teal) */
+  --initiator-text: #1F5B63; /* AA-compliant teal for links/text */
+  --partner:   #C89331;  /* ink B: the Partner's half of the joint (gold) */
+  --partner-text: #8A5E14;   /* AA-compliant gold for links/text */
+  --seat:      #6E5A2A;  /* the seat colour where the two halves meet */
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bench: #141210; --raised: #1F1C18; --ink: #EDE9E0; --meta: #A9A398;
+    --hairline: #302C26; --initiator: #5AAAB2; --initiator-text: #5AAAB2;
+    --partner: #D6A04A; --partner-text: #D6A04A; --seat: #A78A3E;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bench); color: var(--ink);
+  font-family: -apple-system, "SF Pro Text", system-ui, sans-serif; line-height: 1.55; }
+/* display face for block titles: the register's slab-serif intent against SF Pro body;
+   system serif only (ui-serif / New York / Georgia), zero network font load. */
+h1, h2, .kicker { font-family: ui-serif, "New York", Georgia, "Times New Roman", serif; }
+.container { max-width: 720px; margin: 0 auto; padding: 64px 24px; }
+.kicker { text-transform: uppercase; letter-spacing: .14em; font-size: .8rem;
+  color: var(--meta); margin: 0 0 8px; }
+h1 { font-size: 46px; font-weight: 700; letter-spacing: -0.01em; line-height: 1.14; margin: 0 0 14px; }
+.lead { font-size: 21px; color: var(--meta); max-width: 56ch; margin: 0 0 8px; }
+.sub { font-size: 18px; color: var(--meta); max-width: 60ch; }
+/* the joint motif: two ink halves meeting on a seat seam */
+.joint { display: flex; align-items: stretch; height: 12px; margin: 28px 0 8px; border-radius: 6px; overflow: hidden; }
+.joint .a { flex: 1; background: var(--initiator); }
+.joint .seam { width: 8px; background: var(--seat); }
+.joint .b { flex: 1; background: var(--partner); }
+h2 { font-size: 26px; font-weight: 600; margin: 48px 0 14px;
+  padding-top: 24px; border-top: 1px solid var(--hairline); }
+p { font-size: 17px; max-width: 62ch; }
+.you-a { color: var(--initiator-text); font-weight: 600; }
+.you-b { color: var(--partner-text); font-weight: 600; }
+.cta { display: inline-block; background: var(--raised); color: var(--meta);
+  padding: 12px 24px; border-radius: 12px; text-decoration: none; font-weight: 600;
+  margin-top: 20px; border: 1px solid var(--hairline); cursor: default; }
+.promise { background: var(--raised); padding: 24px; border-radius: 18px; margin-top: 16px; border: 1px solid var(--hairline); }
+.promise ul { margin: 0; padding-left: 20px; }
+.promise li { margin: 8px 0; font-size: 16px; }
+.faq dt { font-weight: 600; margin-top: 20px; }
+.faq dd { margin: 6px 0 0; color: var(--meta); max-width: 62ch; }
+nav { font-size: 14px; color: var(--meta); }
+nav a { color: var(--initiator-text); text-decoration: none; }
+footer { margin-top: 88px; font-size: 13px; color: var(--meta); padding-top: 24px; border-top: 1px solid var(--hairline); }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <p class="kicker">Mortise</p>
+  <h1>A serious compatibility check where no server ever sees your answers.</h1>
+  <div class="joint" aria-hidden="true"><span class="a"></span><span class="seam"></span><span class="b"></span></div>
+  <p class="lead">Two people, deciding something real, each answer a substantial questionnaire on their own iPhone. The results then cross <strong>phone-to-phone</strong>, and one honest, conditional report seats the two profiles together.</p>
+  <p class="sub">For couples weighing marriage or moving in, and for founders weighing a partnership. No server, no account, no analytics. Private by architecture, and free.</p>
+
+  <p><a class="cta" aria-disabled="true">Coming to the App Store</a></p>
+
+  <h2>For the decision, not the daydream</h2>
+  <p>Mortise is built for one moment: getting engaged, moving in, or starting a company together. The person who starts the check (the <span class="you-a">Initiator</span>) invites the other (the <span class="you-b">Partner</span>); both complete the same battery at their own pace, in two or three sittings of about 40&ndash;45 minutes each, stated honestly up front. It is not a daily feed, not a streak, and not a joke quiz. It is the both-of-you assessment a counselor's office sells, made self-serve and private.</p>
+
+  <h2>Premarital compatibility: assessed, not scored</h2>
+  <p>A real <strong>premarital compatibility assessment</strong> compares two whole profiles: how each of you relates, what you each want in a partner, and, for established couples, how accurately you each see the other. The report names growth zones, the places you are likely to grind, and the topics worth talking through before the decision rather than after. There is no percentage and no verdict stamp.</p>
+
+  <h2>Cofounder &amp; business-partner fit</h2>
+  <p>Choosing a business partner deserves the same seriousness as choosing a spouse. The Business battery swaps the couple modules for working rhythm, risk and money, disagreement style, and venture values, the fault lines that actually break partnerships. It gives you a private <strong>cofounder fit test</strong> and <strong>business partner compatibility</strong> check that lives on your two phones, not in a recruiting tool's database.</p>
+
+  <h2>An honest answer, even &ldquo;probably not&rdquo;</h2>
+  <p>The report is two profiles, a read on how accurately you each see the other, and a conditional conclusion. When the two profiles genuinely say so, that conclusion includes a plain &ldquo;probably not a fit, and here is why,&rdquo; with what would have to change. It is material for a conversation between the two of you, not medical or psychological diagnosis, and not therapy. The comparison uses the author's method of a practicing psychologist, in use with real couples since 2019; some scales are experimental and marked as such while validation continues.</p>
+
+  <h2>Private by design</h2>
+  <div class="promise">
+    <ul>
+      <li>No server, no account, no analytics. Your answers are stored only on the two iPhones.</li>
+      <li>You pair with a QR code, then send answers as an encrypted file (over AirDrop, Messages, or Mail) that only the intended iPhone can open, and that is verified on arrival.</li>
+      <li>The app makes no network calls of any kind. App Privacy: <strong>Data Not Collected</strong>. Verifiable with any network proxy.</li>
+      <li>The Initiator chooses up front who sees the report (both of you, or only them), and the Partner sees that choice, and the honest time it takes, before the first question, and can decline.</li>
+      <li>Completely free: no subscription, no in-app purchases, nothing to cancel.</li>
+    </ul>
+  </div>
+
+  <h2>Questions</h2>
+  <dl class="faq">
+    <dt>Is this a premarital compatibility assessment we can do without a counselor?</dt>
+    <dd>Yes. Both of you answer seriously on your own iPhones, and Mortise compares the two profiles and hands you an honest, conditional read with talking points. It is a starting point for the conversation, not a diagnosis, and not a substitute for a specialist if you want one.</dd>
+
+    <dt>Can we use it to check cofounder or business-partner fit?</dt>
+    <dd>Yes. Pick the Business pair type and you each get a shorter battery of about 35 minutes, covering working rhythm, risk and money, disagreement style, and venture values, with a report tuned to what makes partnerships work or fail.</dd>
+
+    <dt>Do our answers leave our phones?</dt>
+    <dd>No. There is no server and no account. Your answers stay on the two iPhones; they cross directly, end-to-end encrypted, and Mortise makes no network calls at all. App Privacy: Data Not Collected.</dd>
+
+    <dt>Is there a compatibility percentage or score?</dt>
+    <dd>No, on purpose. A single number is the category's core dishonesty. Mortise gives you two profiles, a perception-accuracy read, and a conditional conclusion with named conditions instead.</dd>
+
+    <dt>What does it cost?</dt>
+    <dd>Nothing. Mortise is completely free: no subscription, no unlocks, nothing to cancel.</dd>
+  </dl>
+
+  <footer>
+    <nav>
+      <a href="privacy/">Privacy</a> &middot; <a href="terms/">Terms</a> &middot; <a href="support/">Support</a> &middot; <a href="https://hadger.com">Hadger</a>
+    </nav>
+    <p>&copy; 2026 Hadger (ИП ШМИГИРИЛОВ). Mortise is a private, on-device compatibility check for iPhone (iOS 26+), for couples and business partners. Material for a conversation, not medical or psychological diagnosis, and not therapy.</p>
+  </footer>
+
+</div>
+</body>
+</html>

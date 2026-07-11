@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reflection without a diary: why your thoughts shouldn't live on a server</title>
+<meta name="description" content="A private journaling alternative built as an on-device board game for iPhone: no account, no server, App Privacy label Data Not Collected, and why a finite game beats an infinite feed for honest self-review.">
+<link rel="canonical" href="https://hadgerapps.github.io/lila/blog/private-reflection-without-a-diary/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Reflection without a diary: why your thoughts shouldn't live on a server">
+<meta property="og:description" content="On-device reflection for iPhone: no account, no server, Data Not Collected, and why a finite game beats an infinite feed for honest self-review.">
+<meta property="og:url" content="https://hadgerapps.github.io/lila/blog/private-reflection-without-a-diary/">
+<style>
+:root {
+  /* Grounded in Lila's shipped design tokens (see /lila/) */
+  --ground:   #14102B;   /* deep indigo night ground */
+  --surface:  #1C173A;   /* recessed card / sheet surface */
+  --ink:      #ECE5D8;   /* warm ivory, primary ink */
+  --meta:     #B8AFC9;   /* secondary text */
+  --hairline: #3A3363;   /* divider */
+  --gold:     #CBA95E;   /* the Mirror's voice, the one hero accent */
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--ground); color: var(--ink);
+  font-family: -apple-system, "SF Pro Text", system-ui, sans-serif; line-height: 1.6; }
+.container { max-width: 720px; margin: 0 auto; padding: 64px 24px; }
+.eyebrow { font-size: 14px; color: var(--meta); letter-spacing: 0.02em;
+  text-transform: uppercase; margin: 0 0 16px; }
+.eyebrow a { color: var(--meta); text-decoration: none; }
+.eyebrow a:hover { color: var(--gold); }
+h1 { font-family: "New York", Georgia, serif; font-size: 44px; font-weight: 600;
+  letter-spacing: -0.015em; line-height: 1.12; margin: 0 0 20px; }
+.lead { font-family: "New York", Georgia, serif; font-size: 20px;
+  color: var(--ink); max-width: 60ch; margin: 0 0 18px; }
+h2 { font-family: "New York", Georgia, serif; font-size: 27px; font-weight: 500;
+  margin: 48px 0 14px; padding-top: 24px; border-top: 1px solid var(--hairline); }
+p { font-size: 17px; max-width: 62ch; margin: 0 0 18px; }
+em { font-style: italic; }
+.quest { font-family: "New York", Georgia, serif; font-size: 20px; color: var(--ink);
+  border-left: 3px solid var(--gold); padding-left: 16px; margin: 24px 0;
+  max-width: 56ch; font-style: italic; }
+a { color: var(--gold); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.cta { display: inline-block; background: var(--gold); color: var(--ground);
+  padding: 12px 24px; border-radius: 12px; text-decoration: none; font-weight: 600;
+  margin-top: 8px; }
+.cta:hover { text-decoration: none; filter: brightness(1.06); }
+.notes { background: var(--surface); padding: 22px 24px; border-radius: 16px;
+  margin-top: 32px; border: 1px solid var(--hairline); }
+.notes p { font-size: 15px; color: var(--meta); margin: 0; }
+footer { margin-top: 72px; font-size: 13px; color: var(--meta);
+  padding-top: 24px; border-top: 1px solid var(--hairline); }
+footer nav a { color: var(--gold); }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <p class="eyebrow"><a href="/lila/blog/">Lila · Notes</a></p>
+
+  <h1>Reflection without a diary: why your thoughts shouldn't live on a server</h1>
+
+  <p class="lead">The thought usually arrives mid-sentence. You are three lines into an honest paragraph about your marriage, your work, the fear you have not said out loud, and you notice the little sync icon in the corner of the journaling app. The paragraph is leaving. It will be encrypted, probably. Stored responsibly, probably. Read by no one, probably. And "probably" is exactly the word that changes what you write next.</p>
+
+  <h2>You write differently for an audience of maybe</h2>
+
+  <p>A diary on a server is, structurally, a letter. Not to anyone in particular; to whoever ends up holding the server. That set includes the company as it exists today, the company after the acquisition, the engineer debugging the database, whoever walks in through the next breach, and whoever a court order compels. None of this requires bad intent from anyone, and none of it is an accusation aimed at any particular app. It is a description of architecture. Once your words are transmitted, their privacy is a policy. Policies are promises, and your most honest writing cannot be asked to rely on a promise.</p>
+
+  <p>So you hedge. You soften the paragraph about your brother. You describe the fear in terms vague enough to survive an imagined reader. The diary keeps working as a record and quietly stops working as a mirror.</p>
+
+  <p class="quest">The whole value of writing to yourself was that the reader was you.</p>
+
+  <h2>What "Data Not Collected" means, literally</h2>
+
+  <p>Apple requires every app on the App Store to publish an <a href="https://www.apple.com/privacy/labels/" rel="noopener">App Privacy label</a>, a declaration of what data the app collects. The strictest label reads <em>Data Not Collected</em>: the developer declares that the app collects no data from you at all.</p>
+
+  <p>Lila, our reflective board game, carries that label, and it can carry it because there is nothing behind it to collect with. No account and no sign-in, so there is no identity to attach anything to. No server, so there is nowhere to send what you write. No analytics SDK, no telemetry. The Intentions you bring to the board and the answers you write stay in your iPhone's storage, full stop.</p>
+
+  <p>The readings themselves are composed on your iPhone: Apple Intelligence where the device supports it, a hand-authored library of square readings everywhere else. Either way, composition happens on the device in your hand, not in a data center.</p>
+
+  <p>One caveat, stated because unstated caveats are how trust dies: the App Store itself handles the subscription, so Apple's ordinary purchase traffic exists. That is the only network traffic the app produces, and you do not have to take our word for it. Put any network proxy in front of Lila and watch.</p>
+
+  <h2>Why a game and not a blank page</h2>
+
+  <p>Privacy settles who can read your reflection. It says nothing about whether the reflection is any good. This is where the shape of the tool matters, and why Lila is a board game rather than a journal.</p>
+
+  <p>A blank page asks you to interrogate yourself with no structure, and most of us respond by writing the same three complaints in rotation. A feed-shaped app has the opposite problem: it never ends, so it converts reflection into a habit to be maintained, with streaks and badges to prove you maintained it.</p>
+
+  <p>A board game is a third shape, and an old one. The 72-square Leela board has been used for self-examination for a very long time (<a href="/lila/blog/leela-board-game-history/">we wrote about its real history separately</a>). A game has a beginning: you name an Intention, a real question in your own words, and you enter the board only when the die shows six. It has a middle you do not control: the die decides which squares you face, and that randomness is the useful part, because it puts questions in front of you that you would never have asked yourself. And it has an end. The journey completes, the Journal keeps it, and you stop. Being finished is the feature. Honest self-review is effortful, and effort needs edges.</p>
+
+  <p>Lila keeps those edges sharp on purpose. No streaks, no badges, no notifications; the app never asks you to come back. You come back when a question presses, the way the board's original players did.</p>
+
+  <h2>What it is not</h2>
+
+  <p>A game structure is good at prompting honesty. It is not care, and the app says so itself, not just this page. Lila is not therapy and makes no health or medical claims. If a journey touches something heavier than a game should hold, the app does not lean in; it shows a plain card saying that a game is the wrong container for this, and points you toward real people instead. We would rather interrupt a session than pretend software can hold what it cannot.</p>
+
+  <p>The same posture extends to what is arriving in v1.1. The Journal gains Mirror's Thread, a continuity digest that reads across your journeys, composed on the device like everything else. Finished journeys gain a Synthesis, a deeper closing reflection. And there is a shareable Journey Keepsake image, designed privacy-first: by default it contains none of your written text, so the only thing that ever leaves your phone is an image you deliberately chose to share, with contents you can see before you send it.</p>
+
+  <p>If you have been looking for a private journaling alternative, something with a diary's honesty and no server underneath it, <strong>Lila: Crystal Mirror</strong> is our attempt: the 72-square board, a Mirror that will not flatter you, and an App Privacy label that reads Data Not Collected. There is more on <a href="/lila/">the app page</a>, or you can <a class="cta" href="https://apps.apple.com/app/id6786273693">find Lila on the App Store</a></p>
+
+  <div class="notes">
+    <p><strong>Notes.</strong> Lila is a contemplative board game, not therapy, medical, or health advice, and nothing here is a claim about treating any condition. If what you are carrying feels heavier than a game can hold, the right next step is a real person: someone you trust, or professional support where you live.</p>
+  </div>
+
+  <footer>
+    <nav>
+      <a href="/lila/">Lila</a> &middot; <a href="/lila/blog/">Notes</a> &middot; <a href="/lila/privacy/">Privacy</a> &middot; <a href="/lila/support/">Support</a> &middot; <a href="https://hadger.com">Hadger</a>
+    </nav>
+    <p>Written by Roman of Hadger. &copy; 2026 Hadger. Lila is an on-device contemplative board game for iPhone (iOS 26+). A game — not therapy, medical, or health advice.</p>
+  </footer>
+
+</div>
+</body>
+</html>

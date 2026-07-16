@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vial — a private fragrance wardrobe for iPhone</title>
+<meta name="description" content="Vial is a private, on-device fragrance wardrobe for iPhone. A perfume collection organizer and scent tracker that keeps your collection on your device, with no account and no cloud. Scan a bottle's label, browse by note family, get a daily what-to-wear pick, and check for near-duplicates before you buy.">
+<link rel="canonical" href="https://hadgerapps.github.io/vial/">
+<style>
+:root {
+  color-scheme: dark;
+  /* Shipped Vial "perfumer's vitrine" tokens (earthy-muted, Full color commitment).
+     Source: .design-system/perfumers-vitrine-2026-07-15/tokens/tokens.json (executed register). */
+  --vitrine:   #16100B;  /* deepest cabinet ground */
+  --cabinet:   #221913;  /* raised panel behind glass */
+  --card:      #2C2118;  /* bottle-card face */
+  --card-hero: #33261A;  /* Today hero card (catches lamplight) */
+  --hairline:  #3E2F22;  /* warm-brown divider */
+  --specular:  rgba(90,70,51,.55); /* glass top-edge highlight */
+  --ink:       #EFE6D6;  /* Candlelight: primary text (AAA on all grounds) */
+  --sillage:   #C7B8A4;  /* Sillage: secondary text (AAA) */
+  --ash:       #9C8E7C;  /* Ash: captions/meta (AA >= 4.5 body) */
+  --lamplight: #EBA94F;  /* single structural hero accent */
+  --lamp-edge: #C7802F;  /* pressed/edge draw of the amber */
+  /* note-pyramid tiers (the signature motif) */
+  --note-top:   #EBC98A;
+  --note-heart: #D98A5A;
+  --note-base:  #A85D3A;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--vitrine); color: var(--ink);
+  font-family: -apple-system, "SF Pro Text", system-ui, sans-serif; line-height: 1.55; }
+/* display face: a luxe perfume-label serif voice against SF Pro body; system serif only, zero network font load. */
+h1, h2, .kicker { font-family: "Hoefler Text", ui-serif, "New York", Georgia, "Times New Roman", serif; }
+.container { max-width: 720px; margin: 0 auto; padding: 64px 24px; }
+.kicker { text-transform: uppercase; letter-spacing: .16em; font-size: .8rem;
+  color: var(--lamplight); margin: 0 0 10px; font-family: -apple-system, system-ui, sans-serif; }
+h1 { font-size: 46px; font-weight: 700; letter-spacing: -0.01em; line-height: 1.14; margin: 0 0 14px; }
+.lead { font-size: 21px; color: var(--sillage); max-width: 56ch; margin: 0 0 8px; }
+.sub { font-size: 18px; color: var(--ash); max-width: 60ch; }
+/* the note-pyramid signature: top / heart / base tiers, the app's core visual language */
+.pyramid { display: flex; flex-direction: column; align-items: center; gap: 5px; margin: 30px 0 6px; }
+.pyramid span { height: 9px; border-radius: 2px; display: block; }
+.pyramid .t { width: 84px;  background: var(--note-top); }
+.pyramid .h { width: 132px; background: var(--note-heart); }
+.pyramid .b { width: 180px; background: var(--note-base); }
+h2 { font-size: 26px; font-weight: 600; margin: 48px 0 14px;
+  padding-top: 24px; border-top: 1px solid var(--hairline); }
+p { font-size: 17px; max-width: 62ch; color: var(--sillage); }
+.cta { display: inline-block; background: var(--card); color: var(--lamplight);
+  padding: 12px 22px; border-radius: 8px; text-decoration: none; font-weight: 600;
+  margin-top: 22px; border: 1px solid var(--lamp-edge); border-top-color: var(--specular);
+  cursor: default; letter-spacing: .01em; }
+.promise { background: var(--cabinet); padding: 24px; border-radius: 12px; margin-top: 16px;
+  border: 1px solid var(--hairline); border-top: 1px solid var(--specular); }
+.promise ul { margin: 0; padding-left: 20px; }
+.promise li { margin: 8px 0; font-size: 16px; color: var(--sillage); }
+.faq dt { font-weight: 600; margin-top: 20px; color: var(--ink); }
+.faq dd { margin: 6px 0 0; color: var(--ash); max-width: 62ch; }
+nav { font-size: 14px; color: var(--ash); }
+nav a { color: var(--lamplight); text-decoration: none; }
+footer { margin-top: 88px; font-size: 13px; color: var(--ash);
+  padding-top: 24px; border-top: 1px solid var(--hairline); }
+footer p { color: var(--ash); font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <p class="kicker">Vial</p>
+  <h1>Your fragrance wardrobe, private and on your iPhone.</h1>
+  <div class="pyramid" aria-hidden="true"><span class="t"></span><span class="h"></span><span class="b"></span></div>
+  <p class="lead">A <strong>fragrance wardrobe</strong> that lives entirely on your device. Build your collection, get a daily what-to-wear pick, and check for near-duplicates before you buy. Your collection stays on your phone, never in the cloud.</p>
+  <p class="sub">A private perfume collection organizer and scent tracker for iPhone and iPad. No account, no login, no central database.</p>
+
+  <p><a class="cta" aria-disabled="true">Coming to the App Store</a></p>
+
+  <h2>A perfume collection organizer that never phones home</h2>
+  <p>Add bottles by scanning the label with on-device Vision, or by hand. Vial catalogs each fragrance with its house, concentration, size, batch code, and its note pyramid (its <strong>top, heart, and base notes</strong>), so your whole collection becomes a real, searchable <strong>perfume inventory</strong>. Nothing you scan or type leaves the phone, and Vial's App Privacy label reads "Data Not Collected."</p>
+
+  <h2>A daily "what should I wear today" pick</h2>
+  <p>Every morning Vial suggests a fragrance to wear, tuned to the season, the occasion, and which scents you haven't reached for lately, a gentle <strong>scent tracker</strong> for your rotation that gives a one-line reason for each pick. Turn on weather (opt-in) and the pick reads the day's temperature too. Ask Siri or your Action Button "what should I wear today" and Vial answers without opening the app. Everything runs on your device.</p>
+
+  <h2>Never re-buy a near-duplicate</h2>
+  <p>Standing in a shop, run a quick check and Vial tells you if you already own something close, comparing notes and house against your own <strong>cologne collection</strong>. One avoided duplicate purchase pays for the app.</p>
+
+  <h2>Browse your collection by note family</h2>
+  <p>See your wardrobe laid out in a lamplit vitrine, filtered by <strong>fragrance notes</strong>, season, or occasion. Every niche, decant, or vintage bottle has its place, because no proprietary database decides what counts. The collection is yours to keep and shape.</p>
+
+  <h2>Private by design</h2>
+  <div class="promise">
+    <ul>
+      <li>No account, no login, no sync, no social feed. Your wardrobe, photos, and wear history live only on your iPhone.</li>
+      <li>Label scanning and the daily pick run entirely on-device. WeatherKit is the only network call, used to tune the pick, and it sends nothing about you or your collection.</li>
+      <li>App Privacy: <strong>Data Not Collected</strong>. No analytics or advertising SDKs. The full core loop works in Airplane Mode.</li>
+      <li>No ads, no streaks, no badges. A calm, private place for a collection you care about.</li>
+    </ul>
+  </div>
+
+  <h2>Free, with an honest upgrade</h2>
+  <p>Free covers up to ten bottles, the label scan, the duplicate check, and a basic daily pick. Vial Pro (Weekly $4.99, Annual $29.99 with a 7-day free trial, or Lifetime $79.99 one-time) opens an unlimited collection, the full recommendation engine, stats, and export. No subscription pressure and nothing hidden; you can restore purchases anytime.</p>
+
+  <h2>Questions</h2>
+  <dl class="faq">
+    <dt>Does Vial need an account?</dt>
+    <dd>No. There is no sign-up and no login. You open the app and start adding bottles.</dd>
+
+    <dt>Is my collection private?</dt>
+    <dd>Yes, it is on-device. Your wardrobe, photos, notes, and wear history are stored only on your iPhone and are never uploaded. App Privacy: Data Not Collected.</dd>
+
+    <dt>What is a fragrance wardrobe?</dt>
+    <dd>It is a fragrance collector's word for the set of perfumes and colognes they own and choose between, their "rotation." Vial is a private organizer for that wardrobe, plus a daily pick from it.</dd>
+
+    <dt>Does the label scan need the internet?</dt>
+    <dd>No. Scanning reads the bottle label with on-device Vision. The only network call Vial can make is an opt-in weather lookup for the daily pick, and it sends nothing about you.</dd>
+
+    <dt>How does the daily pick work?</dt>
+    <dd>Vial scores each fragrance in your collection for today against the season, the occasion, rotation freshness, and the weather when you opt in, then explains the choice in one line. The scoring runs entirely on your device.</dd>
+
+    <dt>What does it cost?</dt>
+    <dd>Free for up to ten bottles with the scan, duplicate check, and a basic pick. Vial Pro is $4.99/week, $29.99/year with a 7-day free trial, or $79.99 once for Lifetime.</dd>
+  </dl>
+
+  <footer>
+    <nav>
+      <a href="privacy/">Privacy</a> &middot; <a href="terms/">Terms</a> &middot; <a href="support/">Support</a> &middot; <a href="https://hadger.com">Hadger</a>
+    </nav>
+    <p>&copy; 2026 Hadger (IP Shmigirilov). Vial is a private, on-device fragrance wardrobe for iPhone and iPad (iOS 26+): a perfume collection organizer and scent tracker. Nothing leaves your device.</p>
+  </footer>
+
+</div>
+</body>
+</html>

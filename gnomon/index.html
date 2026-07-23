@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gnomon — golden hour &amp; sun times on your Lock Screen</title>
+<meta name="description" content="Gnomon puts today's light on your iPhone Lock Screen: golden hour, blue hour, sunrise and sunset for any spot — computed on your device from standard astronomy, never from a server. No forecasts, no account, no noise.">
+<link rel="canonical" href="https://hadgerapps.github.io/gnomon/">
+<style>
+  /* Placeholder page palette — neutral; the shipped register lands with the app's
+     design system at Phase 1 (atelier direction) and Phase G restyles this page. */
+  :root {
+    --ground: #101418; --card: #1A2027; --ink: #E8ECEF; --sub: #A8B2BC;
+    --accent: #E0A458; --hairline: #2A323B;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--ground); color: var(--ink);
+    font: 17px/1.6 -apple-system, system-ui, "Helvetica Neue", sans-serif; }
+  .container { max-width: 680px; margin: 0 auto; padding: 48px 20px 40px; }
+  .kicker { color: var(--accent); font-weight: 600; letter-spacing: .12em;
+    text-transform: uppercase; font-size: 13px; margin: 0 0 8px; }
+  h1 { font-size: 34px; line-height: 1.2; margin: 0 0 12px; font-weight: 700; }
+  h2 { font-size: 22px; margin: 40px 0 8px; }
+  .lead { font-size: 19px; color: var(--ink); }
+  .sub, p { color: var(--sub); }
+  strong { color: var(--ink); font-weight: 600; }
+  ul { padding-left: 20px; } li { margin: 6px 0; color: var(--sub); }
+  dl dt { font-weight: 600; color: var(--ink); margin-top: 16px; }
+  dl dd { margin: 4px 0 0; color: var(--sub); }
+  nav { font-size: 14px; color: var(--sub); margin-top: 20px; }
+  nav a { color: var(--accent); text-decoration: none; margin-right: 14px; }
+  footer { margin-top: 88px; font-size: 13px; color: var(--sub);
+    padding-top: 24px; border-top: 1px solid var(--hairline); }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <p class="kicker">Gnomon</p>
+  <h1>Today's light, on your Lock Screen.</h1>
+  <p class="lead">Golden hour, blue hour, sunrise and sunset for any spot — <strong>computed on your iPhone</strong> from standard astronomy, never fetched from a server. Add the widget once and "when is the light?" is simply answered, the way the time is.</p>
+  <p class="sub">A calm light planner for photographers, walkers, and anyone who watches the sky. Universal for iPhone and iPad. No account, no forecasts, no noise.</p>
+  <nav><a href="privacy/">Privacy</a> <a href="terms/">Terms</a> <a href="support/">Support</a></nav>
+
+  <h2>The glance, not another planner</h2>
+  <p>The Lock Screen widget shows the day as one readable band of light — night, blue hour, golden hour, day — with a marker for where you are in it. Before an evening that matters, start a quiet <strong>golden hour countdown</strong> as a Live Activity and watch it on the Lock Screen and Dynamic Island, hands free.</p>
+
+  <h2>Computed, never guessed</h2>
+  <p>Gnomon refuses to predict. There are no "sunset quality" scores and no forecast layers — only exact times from the same published solar and lunar mathematics used in almanacs (NOAA / Meeus). That is why it works in airplane mode, anywhere on Earth, and why it never disappoints you about a sky it couldn't have known.</p>
+
+  <h2>Plan the light ahead</h2>
+  <p>Gnomon Pro adds saved spots, scheduled Live Activities, and a <strong>month light-calendar</strong> that shows golden hour drifting through the season, with moon rise and set lines for photographers planning a full-moon evening.</p>
+
+  <h2>Private by construction</h2>
+  <ul>
+    <li>No account, no login, no server. Your location is used on your device to compute sun times and never leaves it.</li>
+    <li>App Privacy label: <strong>Data Not Collected</strong>. The only network calls are App Store purchases and Apple's place search when you look up a new spot.</li>
+    <li>No ads, no streaks, no notification spam. The only alert is the Live Activity you asked for.</li>
+  </ul>
+
+  <h2>Pricing</h2>
+  <p>Free is complete for where you are right now: the full day card and the Lock Screen widget for your current location, forever. Gnomon Pro is $2.99 monthly, $19.99 a year with a 7-day free trial, or a one-time $29.99 Lifetime purchase (family-shareable). Restore purchases anytime.</p>
+
+  <h2>Questions</h2>
+  <dl>
+    <dt>Does Gnomon need an account?</dt>
+    <dd>No. There is no sign-up and no login.</dd>
+    <dt>Does it work offline?</dt>
+    <dd>Yes. All light times are computed on the device. Only the App Store and place search need a connection.</dd>
+    <dt>How accurate are the times?</dt>
+    <dd>Sunrise and sunset match published almanac values to within about two minutes; golden and blue hour use documented solar-elevation definitions you can read inside the app.</dd>
+    <dt>Is this a weather app?</dt>
+    <dd>No. Gnomon shows what is exactly computable — sun and moon times. It never guesses about clouds.</dd>
+  </dl>
+
+  <footer>
+    <p>© 2026 Hadger (IP Shmigirilov) · <a href="privacy/" style="color:var(--accent)">Privacy</a> · <a href="terms/" style="color:var(--accent)">Terms</a> · <a href="support/" style="color:var(--accent)">Support</a></p>
+  </footer>
+</div>
+</body>
+</html>

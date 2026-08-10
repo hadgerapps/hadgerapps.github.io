@@ -1,0 +1,182 @@
+[
+  {
+    "bundleId": "com.hadger.liminal",
+    "name": "Liminal",
+    "oneLiner": "Point your camera anywhere; Liminal turns the moment into a living Lock Screen.",
+    "storeUrl": "https://apps.apple.com/app/id6794660024",
+    "iconUrl": "https://hadgerapps.github.io/liminal/apple-touch-icon.png",
+    "slug": "liminal",
+    "liveSince": "2026-08-06"
+  },
+  {
+    "bundleId": "com.hadger.meridian",
+    "name": "Meridian",
+    "oneLiner": "Look up any perimenopause symptom and read what the evidence actually supports.",
+    "storeUrl": "https://apps.apple.com/app/id6790344184",
+    "iconUrl": "https://hadgerapps.github.io/meridian/apple-touch-icon.png",
+    "slug": "meridian",
+    "liveSince": "2026-07-24"
+  },
+  {
+    "bundleId": "com.hadger.vial",
+    "name": "Vial",
+    "oneLiner": "Your fragrance wardrobe, organized by note family, with a daily pick.",
+    "storeUrl": "https://apps.apple.com/app/id6791525023",
+    "iconUrl": "https://hadgerapps.github.io/vial/apple-touch-icon.png",
+    "slug": "vial",
+    "liveSince": "2026-07-23"
+  },
+  {
+    "bundleId": "com.hadger.aplomb",
+    "name": "Aplomb",
+    "oneLiner": "A live pace, pause and filler meter for rehearsing what you have to say.",
+    "storeUrl": "https://apps.apple.com/app/id6786839696",
+    "iconUrl": "https://hadgerapps.github.io/aplomb/apple-touch-icon.png",
+    "slug": "aplomb",
+    "liveSince": "2026-07-19"
+  },
+  {
+    "bundleId": "com.hadger.morsel",
+    "name": "Morsel",
+    "oneLiner": "Log meals the lazy way, and see which foods your body actually reacts to.",
+    "storeUrl": "https://apps.apple.com/app/id6779900084",
+    "iconUrl": "https://hadgerapps.github.io/morsel/apple-touch-icon.png",
+    "slug": "morsel",
+    "liveSince": "2026-07-18"
+  },
+  {
+    "bundleId": "com.hadger.trivet",
+    "name": "Trivet",
+    "oneLiner": "Photograph a handwritten recipe; get back a clean card you can cook from.",
+    "storeUrl": "https://apps.apple.com/app/id6790121828",
+    "iconUrl": "https://hadgerapps.github.io/trivet/apple-touch-icon.png",
+    "slug": "trivet",
+    "liveSince": "2026-07-12"
+  },
+  {
+    "bundleId": "com.hadger.mortise",
+    "name": "Mortise",
+    "oneLiner": "A serious compatibility check for couples and partners. Phone to phone, free.",
+    "storeUrl": "https://apps.apple.com/app/id6789624824",
+    "iconUrl": "https://hadgerapps.github.io/mortise/apple-touch-icon.png",
+    "slug": "mortise",
+    "liveSince": "2026-07-11"
+  },
+  {
+    "bundleId": "com.hadger.firmament",
+    "name": "Firmament",
+    "oneLiner": "The real sky over any place and date, drawn as a plate you keep or give away.",
+    "storeUrl": "https://apps.apple.com/app/id6785449788",
+    "iconUrl": "https://hadgerapps.github.io/firmament/apple-touch-icon.png",
+    "slug": "firmament",
+    "liveSince": "2026-07-06"
+  },
+  {
+    "bundleId": "com.hadger.softday",
+    "name": "Soft Day",
+    "oneLiner": "A kind journal for hard days: write one good moment, get gentle support back.",
+    "storeUrl": "https://apps.apple.com/app/id6769456388",
+    "iconUrl": "https://hadgerapps.github.io/softday/apple-touch-icon.png",
+    "slug": "softday",
+    "liveSince": "2026-07-02"
+  },
+  {
+    "bundleId": "com.hadger.lila",
+    "name": "Lila",
+    "oneLiner": "The 72-square game of self-knowledge, with a Mirror that will not flatter you.",
+    "storeUrl": "https://apps.apple.com/app/id6786273693",
+    "iconUrl": "https://hadgerapps.github.io/lila/apple-touch-icon.png",
+    "slug": "lila",
+    "liveSince": "2026-07-02"
+  },
+  {
+    "bundleId": "com.hadger.cushion",
+    "name": "Cushion",
+    "oneLiner": "One number, once a day: how much is safe to spend before payday. No bank link.",
+    "storeUrl": "https://apps.apple.com/app/id6777035082",
+    "iconUrl": "https://hadgerapps.github.io/cushion/apple-touch-icon.png",
+    "slug": "cushion",
+    "liveSince": "2026-07-01"
+  },
+  {
+    "bundleId": "com.hadger.foolscap",
+    "name": "Foolscap",
+    "oneLiner": "A fresh ladder of cryptic clues every morning, composed on your iPhone.",
+    "storeUrl": "https://apps.apple.com/app/id6785649689",
+    "iconUrl": "https://hadgerapps.github.io/foolscap/apple-touch-icon.png",
+    "slug": "foolscap",
+    "liveSince": "2026-06-30"
+  },
+  {
+    "bundleId": "com.hadger.ruse",
+    "name": "Ruse",
+    "oneLiner": "One clever logic puzzle each morning, composed on your iPhone. Fully offline.",
+    "storeUrl": "https://apps.apple.com/app/id6785173718",
+    "iconUrl": "https://hadgerapps.github.io/ruse/apple-touch-icon.png",
+    "slug": "ruse",
+    "liveSince": "2026-06-29"
+  },
+  {
+    "bundleId": "com.hadger.sift",
+    "name": "Sift",
+    "oneLiner": "Dump what is on your mind; Sift sorts it into act on, noise, and keeps coming back.",
+    "storeUrl": "https://apps.apple.com/app/id6779903351",
+    "iconUrl": "https://hadgerapps.github.io/sift/apple-touch-icon.png",
+    "slug": "sift",
+    "liveSince": "2026-06-26"
+  },
+  {
+    "bundleId": "com.hadger.foray",
+    "name": "Foray",
+    "oneLiner": "Small outdoor quests composed by your phone, to find in your own surroundings.",
+    "storeUrl": "https://apps.apple.com/app/id6784655171",
+    "iconUrl": "https://hadgerapps.github.io/foray/apple-touch-icon.png",
+    "slug": "foray",
+    "liveSince": "2026-06-26"
+  },
+  {
+    "bundleId": "com.hadger.culprit",
+    "name": "Culprit",
+    "oneLiner": "Log your shelf and your skin; Culprit names the product to suspect for a breakout.",
+    "storeUrl": "https://apps.apple.com/app/id6783813841",
+    "iconUrl": "https://hadgerapps.github.io/culprit/apple-touch-icon.png",
+    "slug": "culprit",
+    "liveSince": "2026-06-24"
+  },
+  {
+    "bundleId": "com.hadger.almanac",
+    "name": "Body Almanac",
+    "oneLiner": "Shows what alcohol actually does to your sleep, on your own data. No streaks, no shame.",
+    "storeUrl": "https://apps.apple.com/app/id6776374110",
+    "iconUrl": "https://hadgerapps.github.io/almanac/apple-touch-icon.png",
+    "slug": "almanac",
+    "liveSince": "2026-06-05"
+  },
+  {
+    "bundleId": "com.hadger.pause",
+    "name": "Pause",
+    "oneLiner": "Asks why you are opening that app, in your own words, before it lets you in.",
+    "storeUrl": "https://apps.apple.com/app/id6773488024",
+    "iconUrl": "https://hadgerapps.github.io/pause/apple-touch-icon.png",
+    "slug": "pause",
+    "liveSince": "2026-06-03"
+  },
+  {
+    "bundleId": "com.hadger.wake",
+    "name": "Wake",
+    "oneLiner": "Reads the sleep your Apple Watch already recorded, and says why you woke up tired.",
+    "storeUrl": "https://apps.apple.com/app/id6772706780",
+    "iconUrl": "https://hadgerapps.github.io/wake/apple-touch-icon.png",
+    "slug": "wake",
+    "liveSince": "2026-05-29"
+  },
+  {
+    "bundleId": "com.hadger.pith",
+    "name": "Pith Voice",
+    "oneLiner": "Speak for a few minutes; your iPhone finds the pith of it and keeps it there.",
+    "storeUrl": "https://apps.apple.com/app/id6770544476",
+    "iconUrl": "https://hadgerapps.github.io/pith/apple-touch-icon.png",
+    "slug": "pith",
+    "liveSince": "2026-05-29"
+  }
+]

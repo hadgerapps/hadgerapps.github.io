@@ -3,66 +3,268 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hadger — Privacy, Terms & Support</title>
+<title>Hadger — small, private apps for iPhone</title>
+<meta name="description" content="Hadger makes small, private iPhone apps that do their work on your own device. 20 apps on the App Store: journals, puzzles, trackers and keepsakes, with no accounts and no servers.">
+<link rel="canonical" href="https://hadgerapps.github.io/">
 <style>
 body { margin: 0; background: #FAFAF6; color: #1F1B16;
   font-family: -apple-system, system-ui, sans-serif; line-height: 1.5; }
 .container { max-width: 720px; margin: 0 auto; padding: 64px 24px; }
-h1 { font-family: 'New York', Georgia, serif; font-size: 40px; font-weight: 600; margin: 0 0 8px; }
-.lede { color: #6B6358; font-size: 16px; max-width: 60ch; margin: 0 0 40px; }
-h2 { font-family: 'New York', Georgia, serif; font-size: 22px; font-weight: 500; margin: 32px 0 8px; }
+h1 { font-family: 'New York', Georgia, serif; font-size: 44px; font-weight: 600;
+  margin: 0 0 12px; letter-spacing: -0.01em; }
+.lede { color: #6B6358; font-size: 18px; max-width: 58ch; margin: 0 0 44px; }
+h2 { font-family: 'New York', Georgia, serif; font-size: 24px; font-weight: 500;
+  margin: 48px 0 6px; padding-top: 28px; border-top: 1px solid #E5DFD2; }
+.sub { color: #6B6358; font-size: 15px; margin: 0 0 20px; }
 ul { list-style: none; padding: 0; margin: 0; }
-li { margin: 6px 0; font-size: 16px; }
 a { color: #4A5D3A; }
-.app { padding: 16px 0; border-bottom: 1px solid #E5DFD2; }
-.app .name { font-family: 'New York', Georgia, serif; font-size: 20px; font-weight: 500; }
-.app .links { font-size: 15px; color: #6B6358; margin-top: 4px; }
-footer { margin-top: 56px; font-size: 13px; color: #6B6358; padding-top: 16px; border-top: 1px solid #E5DFD2; }
+.apps > li.app { padding: 8px 0 16px; border-bottom: 1px solid #E5DFD2; }
+.app-main { display: flex; align-items: center; gap: 16px; min-height: 44px;
+  padding: 10px 8px; margin: 0 -8px; border-radius: 12px;
+  text-decoration: none; color: inherit; }
+.app-main:hover { background: #F1EEE4; }
+.app-icon { width: 60px; height: 60px; border-radius: 13px; flex: 0 0 60px;
+  background: #EDE9DE; }
+.app-text { display: flex; flex-direction: column; min-width: 0; }
+.app-name { font-family: 'New York', Georgia, serif; font-size: 20px; font-weight: 500; }
+.app-line { color: #6B6358; font-size: 15px; }
+.app-legal { margin: 2px 0 0 84px; font-size: 13px; color: #6B6358; }
+.soon li { display: flex; flex-wrap: wrap; gap: 10px; align-items: baseline;
+  padding: 10px 0; border-bottom: 1px solid #E5DFD2; }
+.soon-name { font-family: 'New York', Georgia, serif; font-size: 17px; }
+.soon-links { font-size: 13px; color: #6B6358; }
+footer { margin-top: 64px; font-size: 13px; color: #6B6358;
+  padding-top: 20px; border-top: 1px solid #E5DFD2; }
+@media (max-width: 420px) {
+  h1 { font-size: 34px; }
+  .app-legal { margin-left: 0; }
+}
 </style>
 </head>
 <body>
 <div class="container">
 
 <h1>Hadger</h1>
-<p class="lede">Calm, private apps for iPhone. This page hosts the Privacy, Terms, and Support pages for each app. The apps themselves live on the App Store; nothing here collects any data. <a href="/story/">The story behind Hadger</a>.</p>
+<p class="lede">Small, private apps for iPhone. Each one does its work on your own device: no account to make, no server to trust, nothing collected. <a href="/story/">The story behind Hadger</a>.</p>
 
-<div class="app">
-  <div class="name">Soft Day</div>
-  <div class="links"><a href="/softday/privacy/">Privacy</a> · <a href="/softday/terms/">Terms</a> · <a href="/softday/support/">Support</a></div>
-</div>
-<div class="app">
-  <div class="name">Pith Voice</div>
-  <div class="links"><a href="/pith/privacy/">Privacy</a> · <a href="/pith/terms/">Terms</a> · <a href="/pith/support/">Support</a></div>
-</div>
-<div class="app">
-  <div class="name">Wake</div>
-  <div class="links"><a href="/wake/privacy/">Privacy</a> · <a href="/wake/terms/">Terms</a> · <a href="/wake/support/">Support</a></div>
-</div>
-<div class="app">
-  <div class="name">Pause Intent</div>
-  <div class="links"><a href="/pause/privacy/">Privacy</a> · <a href="/pause/terms/">Terms</a> · <a href="/pause/support/">Support</a></div>
-</div>
-<div class="app">
-  <div class="name">Almanac</div>
-  <div class="links"><a href="/almanac/privacy/">Privacy</a> · <a href="/almanac/terms/">Terms</a> · <a href="/almanac/support/">Support</a></div>
-</div>
-<div class="app">
-  <div class="name">Cushion</div>
-  <div class="links"><a href="/cushion/privacy/">Privacy</a> · <a href="/cushion/terms/">Terms</a> · <a href="/cushion/support/">Support</a></div>
-</div>
-<div class="app">
-  <div class="name">Lumen</div>
-  <div class="links"><a href="/lumen/privacy/">Privacy</a> · <a href="/lumen/terms/">Terms</a> · <a href="/lumen/support/">Support</a></div>
-</div>
-<div class="app">
-  <div class="name"><a href="/fermata/">Fermata</a></div>
-  <div class="links"><a href="/fermata/privacy/">Privacy</a> · <a href="/fermata/terms/">Terms</a> · <a href="/fermata/support/">Support</a></div>
-  <div class="name"><a href="/aether/">Aether</a></div>
-  <div class="links"><a href="/aether/privacy/">Privacy</a> · <a href="/aether/terms/">Terms</a> · <a href="/aether/support/">Support</a></div>
-</div>
+<h2>On the App Store</h2>
+<p class="sub">20 apps, newest first.</p>
+<ul class="apps">
+<li class="app">
+  <a class="app-main" href="https://apps.apple.com/app/id6794660024?ct=hadger-web-page">
+    <img class="app-icon" src="/liminal/apple-touch-icon.png" alt="" width="60" height="60" loading="lazy">
+    <span class="app-text">
+      <span class="app-name">Liminal</span>
+      <span class="app-line">Point your camera anywhere; Liminal turns the moment into a living Lock Screen.</span>
+    </span>
+  </a>
+  <p class="app-legal"><a href="/liminal/">About</a> &middot; <a href="/liminal/privacy/">Privacy</a> &middot; <a href="/liminal/terms/">Terms</a> &middot; <a href="/liminal/support/">Support</a></p>
+</li>
+<li class="app">
+  <a class="app-main" href="https://apps.apple.com/app/id6790344184?ct=hadger-web-page">
+    <img class="app-icon" src="/meridian/apple-touch-icon.png" alt="" width="60" height="60" loading="lazy">
+    <span class="app-text">
+      <span class="app-name">Meridian</span>
+      <span class="app-line">Look up any perimenopause symptom and read what the evidence actually supports.</span>
+    </span>
+  </a>
+  <p class="app-legal"><a href="/meridian/">About</a> &middot; <a href="/meridian/privacy/">Privacy</a> &middot; <a href="/meridian/terms/">Terms</a> &middot; <a href="/meridian/support/">Support</a></p>
+</li>
+<li class="app">
+  <a class="app-main" href="https://apps.apple.com/app/id6791525023?ct=hadger-web-page">
+    <img class="app-icon" src="/vial/apple-touch-icon.png" alt="" width="60" height="60" loading="lazy">
+    <span class="app-text">
+      <span class="app-name">Vial</span>
+      <span class="app-line">Your fragrance wardrobe, organized by note family, with a daily pick.</span>
+    </span>
+  </a>
+  <p class="app-legal"><a href="/vial/">About</a> &middot; <a href="/vial/privacy/">Privacy</a> &middot; <a href="/vial/terms/">Terms</a> &middot; <a href="/vial/support/">Support</a></p>
+</li>
+<li class="app">
+  <a class="app-main" href="https://apps.apple.com/app/id6786839696?ct=hadger-web-page">
+    <img class="app-icon" src="/aplomb/apple-touch-icon.png" alt="" width="60" height="60" loading="lazy">
+    <span class="app-text">
+      <span class="app-name">Aplomb</span>
+      <span class="app-line">A live pace, pause and filler meter for rehearsing what you have to say.</span>
+    </span>
+  </a>
+  <p class="app-legal"><a href="/aplomb/">About</a> &middot; <a href="/aplomb/privacy/">Privacy</a> &middot; <a href="/aplomb/terms/">Terms</a> &middot; <a href="/aplomb/support/">Support</a></p>
+</li>
+<li class="app">
+  <a class="app-main" href="https://apps.apple.com/app/id6779900084?ct=hadger-web-page">
+    <img class="app-icon" src="/morsel/apple-touch-icon.png" alt="" width="60" height="60" loading="lazy">
+    <span class="app-text">
+      <span class="app-name">Morsel</span>
+      <span class="app-line">Log meals the lazy way, and see which foods your body actually reacts to.</span>
+    </span>
+  </a>
+  <p class="app-legal"><a href="/morsel/">About</a> &middot; <a href="/morsel/privacy/">Privacy</a> &middot; <a href="/morsel/terms/">Terms</a> &middot; <a href="/morsel/support/">Support</a></p>
+</li>
+<li class="app">
+  <a class="app-main" href="https://apps.apple.com/app/id6790121828?ct=hadger-web-page">
+    <img class="app-icon" src="/trivet/apple-touch-icon.png" alt="" width="60" height="60" loading="lazy">
+    <span class="app-text">
+      <span class="app-name">Trivet</span>
+      <span class="app-line">Photograph a handwritten recipe; get back a clean card you can cook from.</span>
+    </span>
+  </a>
+  <p class="app-legal"><a href="/trivet/">About</a> &middot; <a href="/trivet/privacy/">Privacy</a> &middot; <a href="/trivet/terms/">Terms</a> &middot; <a href="/trivet/support/">Support</a></p>
+</li>
+<li class="app">
+  <a class="app-main" href="https://apps.apple.com/app/id6789624824?ct=hadger-web-page">
+    <img class="app-icon" src="/mortise/apple-touch-icon.png" alt="" width="60" height="60" loading="lazy">
+    <span class="app-text">
+      <span class="app-name">Mortise</span>
+      <span class="app-line">A serious compatibility check for couples and partners. Phone to phone, free.</span>
+    </span>
+  </a>
+  <p class="app-legal"><a href="/mortise/">About</a> &middot; <a href="/mortise/privacy/">Privacy</a> &middot; <a href="/mortise/terms/">Terms</a> &middot; <a href="/mortise/support/">Support</a></p>
+</li>
+<li class="app">
+  <a class="app-main" href="https://apps.apple.com/app/id6785449788?ct=hadger-web-page">
+    <img class="app-icon" src="/firmament/apple-touch-icon.png" alt="" width="60" height="60" loading="lazy">
+    <span class="app-text">
+      <span class="app-name">Firmament</span>
+      <span class="app-line">The real sky over any place and date, drawn as a plate you keep or give away.</span>
+    </span>
+  </a>
+  <p class="app-legal"><a href="/firmament/">About</a> &middot; <a href="/firmament/privacy/">Privacy</a> &middot; <a href="/firmament/terms/">Terms</a> &middot; <a href="/firmament/support/">Support</a></p>
+</li>
+<li class="app">
+  <a class="app-main" href="https://apps.apple.com/app/id6769456388?ct=hadger-web-page">
+    <img class="app-icon" src="/softday/apple-touch-icon.png" alt="" width="60" height="60" loading="lazy">
+    <span class="app-text">
+      <span class="app-name">Soft Day</span>
+      <span class="app-line">A kind journal for hard days: write one good moment, get gentle support back.</span>
+    </span>
+  </a>
+  <p class="app-legal"><a href="/softday/">About</a> &middot; <a href="/softday/privacy/">Privacy</a> &middot; <a href="/softday/terms/">Terms</a> &middot; <a href="/softday/support/">Support</a></p>
+</li>
+<li class="app">
+  <a class="app-main" href="https://apps.apple.com/app/id6786273693?ct=hadger-web-page">
+    <img class="app-icon" src="/lila/apple-touch-icon.png" alt="" width="60" height="60" loading="lazy">
+    <span class="app-text">
+      <span class="app-name">Lila</span>
+      <span class="app-line">The 72-square game of self-knowledge, with a Mirror that will not flatter you.</span>
+    </span>
+  </a>
+  <p class="app-legal"><a href="/lila/">About</a> &middot; <a href="/lila/privacy/">Privacy</a> &middot; <a href="/lila/terms/">Terms</a> &middot; <a href="/lila/support/">Support</a></p>
+</li>
+<li class="app">
+  <a class="app-main" href="https://apps.apple.com/app/id6777035082?ct=hadger-web-page">
+    <img class="app-icon" src="/cushion/apple-touch-icon.png" alt="" width="60" height="60" loading="lazy">
+    <span class="app-text">
+      <span class="app-name">Cushion</span>
+      <span class="app-line">One number, once a day: how much is safe to spend before payday. No bank link.</span>
+    </span>
+  </a>
+  <p class="app-legal"><a href="/cushion/">About</a> &middot; <a href="/cushion/privacy/">Privacy</a> &middot; <a href="/cushion/terms/">Terms</a> &middot; <a href="/cushion/support/">Support</a></p>
+</li>
+<li class="app">
+  <a class="app-main" href="https://apps.apple.com/app/id6785649689?ct=hadger-web-page">
+    <img class="app-icon" src="/foolscap/apple-touch-icon.png" alt="" width="60" height="60" loading="lazy">
+    <span class="app-text">
+      <span class="app-name">Foolscap</span>
+      <span class="app-line">A fresh ladder of cryptic clues every morning, composed on your iPhone.</span>
+    </span>
+  </a>
+  <p class="app-legal"><a href="/foolscap/">About</a> &middot; <a href="/foolscap/privacy/">Privacy</a> &middot; <a href="/foolscap/terms/">Terms</a> &middot; <a href="/foolscap/support/">Support</a></p>
+</li>
+<li class="app">
+  <a class="app-main" href="https://apps.apple.com/app/id6785173718?ct=hadger-web-page">
+    <img class="app-icon" src="/ruse/apple-touch-icon.png" alt="" width="60" height="60" loading="lazy">
+    <span class="app-text">
+      <span class="app-name">Ruse</span>
+      <span class="app-line">One clever logic puzzle each morning, composed on your iPhone. Fully offline.</span>
+    </span>
+  </a>
+  <p class="app-legal"><a href="/ruse/">About</a> &middot; <a href="/ruse/privacy/">Privacy</a> &middot; <a href="/ruse/terms/">Terms</a> &middot; <a href="/ruse/support/">Support</a></p>
+</li>
+<li class="app">
+  <a class="app-main" href="https://apps.apple.com/app/id6779903351?ct=hadger-web-page">
+    <img class="app-icon" src="/sift/apple-touch-icon.png" alt="" width="60" height="60" loading="lazy">
+    <span class="app-text">
+      <span class="app-name">Sift</span>
+      <span class="app-line">Dump what is on your mind; Sift sorts it into act on, noise, and keeps coming back.</span>
+    </span>
+  </a>
+  <p class="app-legal"><a href="/sift/">About</a> &middot; <a href="/sift/privacy/">Privacy</a> &middot; <a href="/sift/terms/">Terms</a> &middot; <a href="/sift/support/">Support</a></p>
+</li>
+<li class="app">
+  <a class="app-main" href="https://apps.apple.com/app/id6784655171?ct=hadger-web-page">
+    <img class="app-icon" src="/foray/apple-touch-icon.png" alt="" width="60" height="60" loading="lazy">
+    <span class="app-text">
+      <span class="app-name">Foray</span>
+      <span class="app-line">Small outdoor quests composed by your phone, to find in your own surroundings.</span>
+    </span>
+  </a>
+  <p class="app-legal"><a href="/foray/">About</a> &middot; <a href="/foray/privacy/">Privacy</a> &middot; <a href="/foray/terms/">Terms</a> &middot; <a href="/foray/support/">Support</a></p>
+</li>
+<li class="app">
+  <a class="app-main" href="https://apps.apple.com/app/id6783813841?ct=hadger-web-page">
+    <img class="app-icon" src="/culprit/apple-touch-icon.png" alt="" width="60" height="60" loading="lazy">
+    <span class="app-text">
+      <span class="app-name">Culprit</span>
+      <span class="app-line">Log your shelf and your skin; Culprit names the product to suspect for a breakout.</span>
+    </span>
+  </a>
+  <p class="app-legal"><a href="/culprit/">About</a> &middot; <a href="/culprit/privacy/">Privacy</a> &middot; <a href="/culprit/terms/">Terms</a> &middot; <a href="/culprit/support/">Support</a></p>
+</li>
+<li class="app">
+  <a class="app-main" href="https://apps.apple.com/app/id6776374110?ct=hadger-web-page">
+    <img class="app-icon" src="/almanac/apple-touch-icon.png" alt="" width="60" height="60" loading="lazy">
+    <span class="app-text">
+      <span class="app-name">Body Almanac</span>
+      <span class="app-line">Shows what alcohol actually does to your sleep, on your own data. No streaks, no shame.</span>
+    </span>
+  </a>
+  <p class="app-legal"><a href="/almanac/">About</a> &middot; <a href="/almanac/privacy/">Privacy</a> &middot; <a href="/almanac/terms/">Terms</a> &middot; <a href="/almanac/support/">Support</a></p>
+</li>
+<li class="app">
+  <a class="app-main" href="https://apps.apple.com/app/id6773488024?ct=hadger-web-page">
+    <img class="app-icon" src="/pause/apple-touch-icon.png" alt="" width="60" height="60" loading="lazy">
+    <span class="app-text">
+      <span class="app-name">Pause</span>
+      <span class="app-line">Asks why you are opening that app, in your own words, before it lets you in.</span>
+    </span>
+  </a>
+  <p class="app-legal"><a href="/pause/">About</a> &middot; <a href="/pause/privacy/">Privacy</a> &middot; <a href="/pause/terms/">Terms</a> &middot; <a href="/pause/support/">Support</a></p>
+</li>
+<li class="app">
+  <a class="app-main" href="https://apps.apple.com/app/id6772706780?ct=hadger-web-page">
+    <img class="app-icon" src="/wake/apple-touch-icon.png" alt="" width="60" height="60" loading="lazy">
+    <span class="app-text">
+      <span class="app-name">Wake</span>
+      <span class="app-line">Reads the sleep your Apple Watch already recorded, and says why you woke up tired.</span>
+    </span>
+  </a>
+  <p class="app-legal"><a href="/wake/">About</a> &middot; <a href="/wake/privacy/">Privacy</a> &middot; <a href="/wake/terms/">Terms</a> &middot; <a href="/wake/support/">Support</a></p>
+</li>
+<li class="app">
+  <a class="app-main" href="https://apps.apple.com/app/id6770544476?ct=hadger-web-page">
+    <img class="app-icon" src="/pith/apple-touch-icon.png" alt="" width="60" height="60" loading="lazy">
+    <span class="app-text">
+      <span class="app-name">Pith Voice</span>
+      <span class="app-line">Speak for a few minutes; your iPhone finds the pith of it and keeps it there.</span>
+    </span>
+  </a>
+  <p class="app-legal"><a href="/pith/">About</a> &middot; <a href="/pith/privacy/">Privacy</a> &middot; <a href="/pith/terms/">Terms</a> &middot; <a href="/pith/support/">Support</a></p>
+</li>
+</ul>
+
+<h2>In review</h2>
+<p class="sub">Submitted to Apple and not yet on the App Store. Their privacy, terms and support pages are here already.</p>
+<ul class="soon">
+<li><span class="soon-name">Aether</span> <span class="soon-links"><a href="/aether/">About</a> &middot; <a href="/aether/privacy/">Privacy</a> &middot; <a href="/aether/terms/">Terms</a> &middot; <a href="/aether/support/">Support</a></span></li>
+<li><span class="soon-name">Fermata</span> <span class="soon-links"><a href="/fermata/">About</a> &middot; <a href="/fermata/privacy/">Privacy</a> &middot; <a href="/fermata/terms/">Terms</a> &middot; <a href="/fermata/support/">Support</a></span></li>
+<li><span class="soon-name">Gnomon</span> <span class="soon-links"><a href="/gnomon/">About</a> &middot; <a href="/gnomon/privacy/">Privacy</a> &middot; <a href="/gnomon/terms/">Terms</a> &middot; <a href="/gnomon/support/">Support</a></span></li>
+<li><span class="soon-name">Hamon</span> <span class="soon-links"><a href="/hamon/">About</a> &middot; <a href="/hamon/privacy/">Privacy</a> &middot; <a href="/hamon/terms/">Terms</a> &middot; <a href="/hamon/support/">Support</a></span></li>
+<li><span class="soon-name">Lumen</span> <span class="soon-links"><a href="/lumen/">About</a> &middot; <a href="/lumen/privacy/">Privacy</a> &middot; <a href="/lumen/terms/">Terms</a> &middot; <a href="/lumen/support/">Support</a></span></li>
+</ul>
 
 <footer>
-  Made by Hadger · <a href="https://hadger.com">hadger.com</a>
+  Made by Hadger &middot; <a href="https://hadger.com">hadger.com</a> &middot;
+  <a href="mailto:hadger.support@gmail.com">hadger.support@gmail.com</a>
 </footer>
 
 </div>

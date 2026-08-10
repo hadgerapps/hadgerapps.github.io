@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fermata — mark a minute, and the phone measures how steady you held it</title>
+<meta name="description" content="Fermata records the minutes you take, using the phone's own motion sensor. It draws each one as a private field of light for your Home Screen and Lock Screen. No permissions, no account, no network.">
+<link rel="canonical" href="https://hadgerapps.github.io/fermata/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Hadger">
+<meta property="og:title" content="Fermata — a minute, measured and drawn">
+<meta property="og:description" content="Mark a moment and hold your iPhone. Fermata reads how steady the phone was and draws that minute as a private field of light. Made on your iPhone. No account, no upload, no tracking.">
+<meta property="og:url" content="https://hadgerapps.github.io/fermata/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Fermata — a minute, measured and drawn">
+<meta name="twitter:description" content="Mark a moment and hold your iPhone. Fermata reads how steady the phone was and draws that minute as a private field of light.">
+<!-- App Store link lands here at Phase 5, once the ASC app record exists (queue: fermata-asc-app-record).
+     Format used by shipped Hadger pages: <a class="cta" href="https://apps.apple.com/app/id{APP_ID}">Get on the App Store</a> -->
+<style>
+  /* Placeholder page palette — neutral; the shipped register lands with the app's
+     design system at Phase 1 (atelier direction) and Phase G restyles this page. */
+  :root {
+    --ground: #101418; --card: #1A2027; --ink: #E8ECEF; --sub: #A8B2BC;
+    --accent: #E0A458; --hairline: #2A323B;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--ground); color: var(--ink);
+    font: 17px/1.6 -apple-system, system-ui, "Helvetica Neue", sans-serif; }
+  .container { max-width: 680px; margin: 0 auto; padding: 48px 20px 40px; }
+  .kicker { color: var(--accent); font-weight: 600; letter-spacing: .12em;
+    text-transform: uppercase; font-size: 13px; margin: 0 0 8px; }
+  h1 { font-size: 34px; line-height: 1.2; margin: 0 0 12px; font-weight: 700; }
+  h2 { font-size: 22px; margin: 40px 0 8px; }
+  .lead { font-size: 19px; color: var(--ink); }
+  .sub, p { color: var(--sub); }
+  strong { color: var(--ink); font-weight: 600; }
+  ul { padding-left: 20px; } li { margin: 6px 0; color: var(--sub); }
+  dl dt { font-weight: 600; color: var(--ink); margin-top: 16px; }
+  dl dd { margin: 4px 0 0; color: var(--sub); }
+  nav { font-size: 14px; color: var(--sub); margin-top: 20px; }
+  nav a { color: var(--accent); text-decoration: none; margin-right: 14px; }
+  footer { margin-top: 88px; font-size: 13px; color: var(--sub);
+    padding-top: 24px; border-top: 1px solid var(--hairline); }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <p class="kicker">Fermata</p>
+  <h1>A minute, measured and drawn.</h1>
+  <p class="lead">Mark a moment. Hold your iPhone for one, three or five minutes. Fermata reads <strong>how steady the phone was while you held it</strong> and draws that reading as a field of light: a band with a hard bright edge when you were steady, the same light with no edge anywhere when you were not.</p>
+  <p class="sub">Made on your iPhone, by the phone's own motion sensor and a renderer we wrote. No permission prompt of any kind. No account, no server, no network.</p>
+  <nav><a href="privacy/">Privacy</a> <a href="terms/">Terms</a> <a href="support/">Support</a></nav>
+
+  <h2>The reading is a shape, not a score</h2>
+  <p>There is no number anywhere in Fermata. No percentage, no grade, no verdict. The difference between a steady minute and a scattered one is <strong>edged or not edged</strong>, a property you can read in greyscale, upside down, from across a room. Underneath the picture each reading carries one plain word, <em>still</em>, <em>settling</em>, <em>drifting</em> or <em>scattering</em>, and the minutes it took.</p>
+
+  <h2>The instrument is allowed to refuse</h2>
+  <p>Set the phone on a table and it will not score you well. It will decline to score you at all. If the motion trace says the phone was resting on something rather than held, the minute closes as <strong>not read</strong>, no reading is invented, and the moment still takes its place in your record. An instrument that refuses is worth more than one that guesses.</p>
+
+  <h2>One line, and everything you have taken on it</h2>
+  <p>There is no home screen and no separate history. Your readings are dated full-bleed slices of the app&rsquo;s own light, stacked newest first, separated by bands of ground that carry the dates. Your newest reading is not on another screen &mdash; it is the top slice, drawn tall. Scroll and it settles into the stack and takes its place among the others.</p>
+
+  <h2>It lives where you already look</h2>
+  <p>The latest reading sits on your Home Screen widget, on the Lock Screen accessory and on StandBy. Widgets show a still picture, because that is what iOS renders there, and we will not sell you motion the system does not pay for. What survives the Lock Screen's monochrome render is the structure of the reading, which is the part that carries the information anyway.</p>
+
+  <h2>Made on your iPhone</h2>
+  <p>The field is drawn by a Metal shader we wrote, running on your device's GPU. Apple Intelligence, where the hardware has it, writes a single line of text under a reading and nothing else; where it is absent, a built-in table writes the same line and the app is identical in every other respect. There is no Private Cloud Compute and no cloud model of any kind. It works in Airplane Mode. Please check.</p>
+
+  <h2>Private by construction</h2>
+  <ul>
+    <li>No account, no login, no server, no sign-in. Nothing you do ever leaves the device.</li>
+    <li>App Privacy label: <strong>Data Not Collected</strong>. The only network call is App Store purchases.</li>
+    <li>The motion trace is never stored. It is reduced to a single reading and discarded.</li>
+    <li>The only way anything leaves your phone is the system share sheet, by your hand.</li>
+  </ul>
+
+  <h2>Pricing</h2>
+  <p>Free is complete in kind: the full picture at full fidelity, a real widget and a real share card. It is limited in rate and depth: one hold a day, two field styles, seven days of record. Fermata Premium is $4.99 monthly, $39.99 a year with a 7-day free trial for new subscribers, or a one-time $89.99 Lifetime purchase (family-shareable). Subscriptions auto-renew unless cancelled at least 24 hours before the period ends; manage them in Settings &rarr; Apple ID &rarr; Subscriptions. Restore purchases anytime.</p>
+
+  <h2>Questions</h2>
+  <dl>
+    <dt>Does Fermata need an account?</dt>
+    <dd>No. There is no sign-up, no login, and no Sign in with Apple. Restoring a purchase needs no account either.</dd>
+    <dt>Does it ask for permissions?</dt>
+    <dd>None, ever. The motion reading uses no authorization and raises no prompt, and Fermata asks for no other permission of any kind &mdash; no photos, no camera, no microphone, no location, no notifications. Sharing a card hands it to the system share sheet, which needs nothing from you.</dd>
+    <dt>Does it work offline?</dt>
+    <dd>Yes, entirely. Only the App Store needs a connection. Turn on Airplane Mode and use the whole app.</dd>
+    <dt>Do I need an Apple Intelligence iPhone?</dt>
+    <dd>No. Every iPhone on iOS 26 draws the reading with the built-in renderer. Apple Intelligence, where present, only writes the one line of text under it.</dd>
+    <dt>Is this a health app?</dt>
+    <dd>No. Fermata is an instrument. It observes how steady a phone was and how long you held it. It shows no charts, no trends and no insight reports, it makes no claim about your body or your mind, and it is not a health, therapy or diagnostic tool.</dd>
+    <dt>Which widgets does it support?</dt>
+    <dd>Home Screen widgets in small, medium, large and extra large, the rectangular and circular Lock Screen accessories, and StandBy. Every widget family is available at both tiers, and each one shows your current reading.</dd>
+  </dl>
+
+  <footer>
+    <p>&copy; 2026 Hadger (IP Shmigirilov) &middot; <a href="privacy/" style="color:var(--accent)">Privacy</a> &middot; <a href="terms/" style="color:var(--accent)">Terms</a> &middot; <a href="support/" style="color:var(--accent)">Support</a></p>
+  </footer>
+</div>
+</body>
+</html>

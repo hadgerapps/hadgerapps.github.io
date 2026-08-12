@@ -1,5 +1,14 @@
 [
   {
+    "bundleId": "com.hadger.hamon",
+    "name": "Hamon",
+    "oneLiner": "Cited heat treat schedules for knife steels, built to work offline at the forge.",
+    "storeUrl": "https://apps.apple.com/app/id6793832673",
+    "iconUrl": "https://hadgerapps.github.io/hamon/apple-touch-icon.png",
+    "slug": "hamon",
+    "liveSince": "2026-08-12"
+  },
+  {
     "bundleId": "com.hadger.liminal",
     "name": "Liminal",
     "oneLiner": "Point your camera anywhere; Liminal turns the moment into a living Lock Screen.",

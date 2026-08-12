@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://hadgerapps.github.io/</loc></url>
   <url><loc>https://hadgerapps.github.io/story/</loc></url>
+  <url><loc>https://hadgerapps.github.io/hamon/</loc></url>
   <url><loc>https://hadgerapps.github.io/liminal/</loc></url>
   <url><loc>https://hadgerapps.github.io/meridian/</loc></url>
   <url><loc>https://hadgerapps.github.io/vial/</loc></url>
@@ -25,8 +26,10 @@
   <url><loc>https://hadgerapps.github.io/aether/</loc></url>
   <url><loc>https://hadgerapps.github.io/fermata/</loc></url>
   <url><loc>https://hadgerapps.github.io/gnomon/</loc></url>
-  <url><loc>https://hadgerapps.github.io/hamon/</loc></url>
   <url><loc>https://hadgerapps.github.io/lumen/</loc></url>
+  <url><loc>https://hadgerapps.github.io/hamon/privacy/</loc></url>
+  <url><loc>https://hadgerapps.github.io/hamon/terms/</loc></url>
+  <url><loc>https://hadgerapps.github.io/hamon/support/</loc></url>
   <url><loc>https://hadgerapps.github.io/liminal/privacy/</loc></url>
   <url><loc>https://hadgerapps.github.io/liminal/terms/</loc></url>
   <url><loc>https://hadgerapps.github.io/liminal/support/</loc></url>
@@ -96,9 +99,6 @@
   <url><loc>https://hadgerapps.github.io/gnomon/privacy/</loc></url>
   <url><loc>https://hadgerapps.github.io/gnomon/terms/</loc></url>
   <url><loc>https://hadgerapps.github.io/gnomon/support/</loc></url>
-  <url><loc>https://hadgerapps.github.io/hamon/privacy/</loc></url>
-  <url><loc>https://hadgerapps.github.io/hamon/terms/</loc></url>
-  <url><loc>https://hadgerapps.github.io/hamon/support/</loc></url>
   <url><loc>https://hadgerapps.github.io/lumen/privacy/</loc></url>
   <url><loc>https://hadgerapps.github.io/lumen/terms/</loc></url>
   <url><loc>https://hadgerapps.github.io/lumen/support/</loc></url>

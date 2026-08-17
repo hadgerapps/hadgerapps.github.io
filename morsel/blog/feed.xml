@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Morsel · Notes</title>
+    <link>https://hadgerapps.github.io/morsel/blog/</link>
+    <description>Calm, practical writing from Morsel about food and feeling: how to notice which foods your body reacts to, without calories, diets, or judgment.</description>
+    <language>en</language>
+    <lastBuildDate>Fri, 03 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://hadgerapps.github.io/morsel/blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Delayed food reactions: why blaming your last meal is usually wrong</title>
+      <link>https://hadgerapps.github.io/morsel/blog/delayed-food-reactions-last-meal-blame/</link>
+      <guid isPermaLink="true">https://hadgerapps.github.io/morsel/blog/delayed-food-reactions-last-meal-blame/</guid>
+      <pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate>
+      <description>When you feel off, the last thing you ate gets the blame. But food often takes many hours to make itself felt, so the real culprit is usually a meal you have already forgotten. A calmer way to look.</description>
+    </item>
+    <item>
+      <title>How to find your trigger foods without an elimination diet</title>
+      <link>https://hadgerapps.github.io/morsel/blog/how-to-find-trigger-foods-without-elimination-diet/</link>
+      <guid isPermaLink="true">https://hadgerapps.github.io/morsel/blog/how-to-find-trigger-foods-without-elimination-diet/</guid>
+      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
+      <description>Elimination diets are hard to do well and easy to get wrong. Here is a calmer way to notice which foods your body reacts to — by watching your own days, not by cutting things out.</description>
+    </item>
+  </channel>
+</rss>

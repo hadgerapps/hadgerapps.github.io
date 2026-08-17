@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lila · Notes</title>
+    <link>https://hadgerapps.github.io/lila/blog/</link>
+    <description>Quiet writing from Lila about the 72-square Leela board game, its real history, and self-inquiry that stays on your iPhone.</description>
+    <language>en</language>
+    <lastBuildDate>Sat, 11 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://hadgerapps.github.io/lila/blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Reflection without a diary: why your thoughts shouldn't live on a server</title>
+      <link>https://hadgerapps.github.io/lila/blog/private-reflection-without-a-diary/</link>
+      <guid isPermaLink="true">https://hadgerapps.github.io/lila/blog/private-reflection-without-a-diary/</guid>
+      <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
+      <description>A private journaling alternative built as an on-device board game for iPhone: no account, no server, App Privacy label Data Not Collected, and why a finite game beats an infinite feed for honest self-review.</description>
+    </item>
+    <item>
+      <title>The 72-square board: what Leela actually is</title>
+      <link>https://hadgerapps.github.io/lila/blog/leela-board-game-history/</link>
+      <guid isPermaLink="true">https://hadgerapps.github.io/lila/blog/leela-board-game-history/</guid>
+      <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
+      <description>The Leela board game before it was Snakes and Ladders: the gyan chauper ancestry, the 72-square reflective tradition of self-knowledge, and what our iPhone adaptation keeps, changes, and openly invents.</description>
+    </item>
+  </channel>
+</rss>

@@ -7,11 +7,18 @@
 <meta name="description" content="Point your camera at a real place and Liminal transfigures it into composed, cinematic art — entirely on your iPhone. Wallpapers, widgets and share cards with no uploads, no account, no analytics.">
 <link rel="canonical" href="https://hadgerapps.github.io/liminal/">
 <style>
-  /* Placeholder page palette — neutral dark; the shipped register lands with the app's
-     design system at Phase 1 (atelier direction) and Phase G restyles this page. */
+  /* Liminal's shipped register, "The Lit Room". Values read 2026-08-17 straight out of
+     the app's asset catalogue — 21_Liminal/Liminal/Resources/Assets.xcassets/<Name>.colorset/
+     Contents.json — which is the only source that is what the binary actually ships.
+     NOT from .design-system/liminal-atelier-20260724/tokens/tokens.json: that artifact is
+     stale, still describing the retired Prussian-blue cyanotype ground (#123A63), and
+     restyling this page from it would have shipped the wrong register.
+     Contrast on --ground, computed not assumed: --ink 17.19:1, --sub 7.67:1, --accent
+     12.29:1 (all clear WCAG AA body text at 4.5:1). --hairline is 1.72:1 and is a rule
+     colour only, never text — the same rule the app's own palette table states. */
   :root {
-    --ground: #0B0D10; --card: #14181D; --ink: #E9EBEE; --sub: #A6AEB8;
-    --accent: #B8C4D4; --hairline: #232930;
+    --ground: #080B12; --card: #101827; --ink: #E8F0FF; --sub: #8FA3C2;
+    --accent: #B4CDFF; --hairline: #2E3A4E;
   }
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--ground); color: var(--ink);

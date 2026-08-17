@@ -17,11 +17,29 @@
 <!-- App Store link lands here at Phase 5, once the ASC app record exists (queue: fermata-asc-app-record).
      Format used by shipped Hadger pages: <a class="cta" href="https://apps.apple.com/app/id{APP_ID}">Get on the App Store</a> -->
 <style>
-  /* Placeholder page palette — neutral; the shipped register lands with the app's
-     design system at Phase 1 (atelier direction) and Phase G restyles this page. */
+  /* Fermata's shipped register, "spectral-emissive". Values read 2026-08-18 out of
+     24_Fermata/Fermata/DesignSystem/Colors.swift — which is where THIS app actually reads
+     its colours. Its asset catalogue holds a single colorset (LaunchBackground), so the
+     catalogue that was the source for Liminal's page is not the source here; the Swift the
+     binary compiles is. NOT from the app's .design-system atelier tokens.json — that class
+     of artifact goes stale, and on Liminal it still described a ground the app had abandoned
+     two versions earlier.
+     (Do not write a glob into this comment: a literal star-slash closes it and silently
+     drops the whole stylesheet. That happened once, on 2026-08-18, and was caught only by
+     reading the computed styles back out of a browser.)
+     --accent is `mantle` (the shader's own SF_MANTLE constant), which the file names as the
+     app's accent "when chrome must agree with the art" — not `ember` #DDB35F, which the same
+     file marks decoration rather than a role.
+     --hairline is `hairlineRule`, white at alpha 0.14, composited over this ground = #28282A.
+     Contrast on --ground, computed not assumed: --ink 18.49:1, --sub 8.26:1, --accent 6.81:1
+     — all clear WCAG AA body text at 4.5:1, and all three reproduce to the hundredth the
+     numbers Colors.swift states for itself. --hairline is 1.38:1 and is a rule colour only,
+     never text.
+     --card was declared here and referenced nowhere on the page; dropped rather than left as
+     a dead token. */
   :root {
-    --ground: #101418; --card: #1A2027; --ink: #E8ECEF; --sub: #A8B2BC;
-    --accent: #E0A458; --hairline: #2A323B;
+    --ground: #050507; --ink: #F2F4F8; --sub: #9AA6B8;
+    --accent: #6E99C5; --hairline: #28282A;
   }
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--ground); color: var(--ink);

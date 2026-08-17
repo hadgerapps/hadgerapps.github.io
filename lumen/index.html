@@ -17,11 +17,34 @@
 <!-- App Store link lands here at Phase 5, once the ASC app record exists (queue: lumen-asc-app-record).
      Format used by shipped Hadger pages: <a class="cta" href="https://apps.apple.com/app/id{APP_ID}">Get on the App Store</a> -->
 <style>
-  /* Placeholder page palette — neutral; the shipped register lands with the app's
-     design system at Phase 1 (atelier direction) and Phase G restyles this page. */
+  /* Lumen's shipped register, "The Switchgear Cabinet" (anodized instrument panel). Values
+     read 2026-08-18 straight out of the app's asset catalogue,
+     22_Lumen/Lumen/Resources/Assets.xcassets/Colors/<name>.colorset/Contents.json, which is
+     what the binary compiles. NOT from .design-system/20260724-lumen-atelier/tokens/
+     tokens.json: that class of artifact goes stale, and on Liminal it still described a
+     ground the app had abandoned two versions earlier.
+     LIGHT appearance, because that is the face the product presents. Four of the five
+     shipped App Store screenshots are chassis #C9D2D8; the light LaunchBackground is
+     #C9D2D8, the same value; and the register's own claim is "one dark window seated in a
+     LIGHTER panel", which the design system documents as barely surviving dark mode
+     (window against chassis measured 1.43:1, lifted to 1.91:1 and rescued by a machined
+     rim). mesh.css is deliberately colourless (currentColor and fractions of it only) and
+     the portfolio already runs cream pages beside dark ones, so the appearance flip needs
+     no other change on this page.
+     --accent is `accentTextSafe`, not `accentFallback`: this page uses the accent as 13-14px
+     TEXT and accentFallback measures 3.05:1 here, a fail. Lumen has no fixed brand accent at
+     all (the hero accent is the day's generated hue, resolved at runtime), and
+     accentTextSafe is the token the design system defines for exactly this pre-first-Lumen
+     case.
+     Contrast on --ground, computed not assumed: --ink 9.14:1, --sub 5.16:1, --accent 4.53:1
+     — all clear WCAG AA body text at 4.5:1. --sub is `ink2`, which the design system resolves
+     against the chassis and only the chassis, and this ground is that chassis. --hairline is
+     the decorative machining hairline at 1.21:1, a rule colour only, never text.
+     --card was declared here and referenced nowhere on the page; dropped rather than left as
+     a dead token. */
   :root {
-    --ground: #101418; --card: #1A2027; --ink: #E8ECEF; --sub: #A8B2BC;
-    --accent: #E0A458; --hairline: #2A323B;
+    --ground: #C9D2D8; --ink: #232D35; --sub: #45535F;
+    --accent: #2E6070; --hairline: #B4C0C8;
   }
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--ground); color: var(--ink);

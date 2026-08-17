@@ -17,9 +17,22 @@
 <!-- App Store link lands here at Phase 5, once the ASC app record exists (queue: sigil-asc-app-record).
      Format used by shipped Hadger pages: <a class="cta" href="https://apps.apple.com/app/id{APP_ID}">Get on the App Store</a> -->
 <style>
-  /* Placeholder page palette — neutral; the shipped register (SPEC § Design system, D1
-     "Cut Light, Stamped Signs") lands with the app's design system at Phase 1 and Phase G
-     restyles this page. Nothing here is a design decision. */
+  /* Placeholder page palette — neutral. Nothing here is a design decision, and it is still
+     a placeholder ON PURPOSE. Read this before "fixing" it to match the app.
+     Checked 2026-08-18, when the sibling pages (fermata, gnomon, lumen) were repainted from
+     their apps' shipped registers and this one deliberately was not. Sigil is at
+     in_dev_phase_1. A DesignSystem/Colors.swift now exists and agrees exactly with
+     .design-system/2026-08-17-sigil/tokens/tokens.json (#000000 ground, #F2F5F8 signal,
+     #9AA1AA transcript, #767D87 quiet, #80BDF7 accent) — but NOTHING RENDERS IT: DS.Color is
+     referenced by one design-system file out of 25 Swift files and by zero views (the only
+     views are RootView plus two Placeholder screens), the sole colorset is LaunchBackground
+     and it still points at the scaffold's `systemBackgroundColor` rather than the black the
+     palette declares, and the app has not reached the Phase-4 blind judge that has
+     historically moved a register (Liminal changed its ground between 1.0 and 1.2, after
+     shipping). Painting this page from a one-day-old palette no binary has ever drawn would
+     ship a register the app may not keep: the same trap as restyling from a stale token
+     file, run in the other direction.
+     Repaint from Colors.swift at Phase G, once Sigil has actually shipped a register. */
   :root {
     --ground: #101418; --card: #1A2027; --ink: #E8ECEF; --sub: #A8B2BC;
     --accent: #E0A458; --hairline: #2A323B;

@@ -7,11 +7,30 @@
 <meta name="description" content="Gnomon puts today's light on your iPhone Lock Screen: golden hour, blue hour, sunrise and sunset for any spot — computed on your device from standard astronomy, never from a server. No forecasts, no account, no noise.">
 <link rel="canonical" href="https://hadgerapps.github.io/gnomon/">
 <style>
-  /* Placeholder page palette — neutral; the shipped register lands with the app's
-     design system at Phase 1 (atelier direction) and Phase G restyles this page. */
+  /* Gnomon's shipped register, "Wayfinding for the Sun" (transit signage). Values read
+     2026-08-18 out of 20_Gnomon/Gnomon/DesignSystem/Colors.swift — which is where THIS app
+     actually reads its colours. Its asset catalogue holds only AccentColor and
+     LaunchBackground, so the catalogue that was the source for Liminal's page is not the
+     source here. NOT from .design-system/gnomon-atelier-20260723/tokens/tokens.json — that
+     class of artifact goes stale, and on Liminal it still described a ground the app had
+     abandoned two versions earlier.
+     DARK appearance, deliberately. Gnomon ships both as first-class light/dark pairs, but
+     the light one puts `roleGolden` #A15E06 on `groundStation` #E6EAEC at 4.21:1 — below AA,
+     exactly the restriction Colors.swift states for itself ("as TEXT only on surfacePlate").
+     This page uses the accent as 13-14px text, and dropping the golden to satisfy a light
+     ground would delete the register's one structural accent, so the page takes the
+     appearance in which the accent is legal on the app's own ground.
+     Contrast on --ground, computed not assumed: --ink 17.33:1, --sub 9.95:1, --accent 8.80:1
+     — all clear WCAG AA body text at 4.5:1.
+     --hairline is `surfacePlate` — a plate PLANE rather than a line, at 1.26:1 — because this
+     register separates by colour plane and Colors.swift forbids a grey hairline outright.
+     `controlEdge` (7.06:1) was rejected: it is the edge that identifies a control, and a
+     footer rule is not one.
+     --card was declared here and referenced nowhere on the page; dropped rather than left as
+     a dead token. */
   :root {
-    --ground: #101418; --card: #1A2027; --ink: #E8ECEF; --sub: #A8B2BC;
-    --accent: #E0A458; --hairline: #2A323B;
+    --ground: #101316; --ink: #F5F7F7; --sub: #B9BEC2;
+    --accent: #F0A22E; --hairline: #23282E;
   }
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--ground); color: var(--ink);

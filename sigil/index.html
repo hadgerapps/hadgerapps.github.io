@@ -3,36 +3,43 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SIGIL — type a phrase, send a circle, and only your people can read it</title>
-<meta name="description" content="SIGIL turns a line of English into a luminous circular mark you can send through any messenger as an ordinary image. Anyone with SIGIL reads an open mark; only people holding a circle's key read that circle's marks. Made on your iPhone. No account, no server, no network.">
+<title>SIGIL: write a sentence, send it as a glowing circle</title>
+<meta name="description" content="SIGIL draws a line of English as a luminous circular mark you can send through any messenger as an ordinary image. Anyone with SIGIL reads an open mark; a mark written in a circle reads only for the people holding that circle's key. Made on your iPhone. No account, no server, no network in the loop.">
 <link rel="canonical" href="https://hadgerapps.github.io/sigil/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Hadger">
-<meta property="og:title" content="SIGIL — a sentence, written as a circle">
-<meta property="og:description" content="Type a phrase; it becomes a luminous circular logogram you can send through any messenger — and only the people holding that circle's key can read it back.">
+<meta property="og:title" content="SIGIL: a sentence, written as a circle">
+<meta property="og:description" content="Write a line of English and send it as a glowing circle. Anyone with SIGIL reads an open mark; marks written in a circle read only for the people holding its key.">
 <meta property="og:url" content="https://hadgerapps.github.io/sigil/">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SIGIL — a sentence, written as a circle">
-<meta name="twitter:description" content="Type a phrase; it becomes a luminous circular logogram you can send through any messenger — and only the people holding that circle's key can read it back.">
-<!-- App Store link lands here at Phase 5, once the ASC app record exists (queue: sigil-asc-app-record).
-     Format used by shipped Hadger pages: <a class="cta" href="https://apps.apple.com/app/id{APP_ID}">Get on the App Store</a> -->
+<meta name="twitter:title" content="SIGIL: a sentence, written as a circle">
+<meta name="twitter:description" content="Write a line of English and send it as a glowing circle. Anyone with SIGIL reads an open mark; marks written in a circle read only for the people holding its key.">
+<!-- This page is the destination of the in-app share caption (SPEC FR-14). It must return 200
+     and must carry NO purchase language (3.1.1): no prices, no buy/subscribe verbs, no external
+     checkout. Full pricing lives on /terms/ and on the App Store product page, which is where a
+     purchase may be offered. Do not re-add a Pricing section here.
+     App Store link lands here at Phase 5, once the ASC app record exists (queue: sigil-asc-app-record).
+     Format used by shipped Hadger pages: <a class="cta" href="https://apps.apple.com/app/id{APP_ID}">Get SIGIL on the App Store</a> -->
+<!-- FR-14 SHARE CAPTION CONTRACT (growth-lead, 2026-08-19). The app pre-fills exactly this
+     string as the text item beside the image in the share sheet. The user can edit or delete it.
+
+       Written with SIGIL. It reads back inside the app, and nowhere else. https://hadgerapps.github.io/sigil/
+
+     Rules, each load-bearing:
+     1. ONE string, identical for open marks and circle marks. A caption that varies by channel
+        would announce that a given mark is keyed, which the frame format deliberately hides
+        (codec contract: no cleartext key-id, no open-vs-keyed flag).
+     2. It carries no phrase, no circle name, no key material, and no price or purchase wording
+        (Guideline 3.1.1). It is attribution, not a storefront.
+     3. It points at this page, not at apps.apple.com: this is the 200-checked host page and it
+        gives ASC a deterministic Web Referrer source type, which is what K-1 counts.
+     4. Trailing slash kept, so chat-app link previews do not take a redirect hop.
+     5. It must never imply the image can be read without the app. "and nowhere else" is the
+        HARD RULE stated to the recipient. -->
 <style>
-  /* Placeholder page palette — neutral. Nothing here is a design decision, and it is still
-     a placeholder ON PURPOSE. Read this before "fixing" it to match the app.
-     Checked 2026-08-18, when the sibling pages (fermata, gnomon, lumen) were repainted from
-     their apps' shipped registers and this one deliberately was not. Sigil is at
-     in_dev_phase_1. A DesignSystem/Colors.swift now exists and agrees exactly with
-     .design-system/2026-08-17-sigil/tokens/tokens.json (#000000 ground, #F2F5F8 signal,
-     #9AA1AA transcript, #767D87 quiet, #80BDF7 accent) — but NOTHING RENDERS IT: DS.Color is
-     referenced by one design-system file out of 25 Swift files and by zero views (the only
-     views are RootView plus two Placeholder screens), the sole colorset is LaunchBackground
-     and it still points at the scaffold's `systemBackgroundColor` rather than the black the
-     palette declares, and the app has not reached the Phase-4 blind judge that has
-     historically moved a register (Liminal changed its ground between 1.0 and 1.2, after
-     shipping). Painting this page from a one-day-old palette no binary has ever drawn would
-     ship a register the app may not keep: the same trap as restyling from a stale token
-     file, run in the other direction.
-     Repaint from Colors.swift at Phase G, once Sigil has actually shipped a register. */
+  /* Placeholder page palette — neutral; the shipped register (SPEC § Design system, D1
+     "Cut Light, Stamped Signs") lands with the app's design system at Phase 1 and Phase G
+     restyles this page. Nothing here is a design decision. */
   :root {
     --ground: #101418; --card: #1A2027; --ink: #E8ECEF; --sub: #A8B2BC;
     --accent: #E0A458; --hairline: #2A323B;
@@ -62,24 +69,24 @@
 
   <p class="kicker">SIGIL</p>
   <h1>A sentence, written as a circle.</h1>
-  <p class="lead">Type a phrase. It becomes a <strong>luminous circular logogram</strong> you can send through any messenger as an ordinary image — and only the people holding that circle's key can read it back.</p>
+  <p class="lead">Write a line of English. SIGIL draws it as a <strong>luminous circular mark</strong> you send through any messenger as an ordinary image, and the person on the other end reads your exact words back inside the app.</p>
   <p class="sub">Made on your iPhone. No account, no server, no network in the loop.</p>
   <nav><a href="privacy/">Privacy</a> <a href="terms/">Terms</a> <a href="support/">Support</a></nav>
 
   <h2>It looks like a language, not like junk</h2>
-  <p>Most ciphers produce noise: a wall of base64 nobody wants in their chat. SIGIL produces a mark. Rings of glyph strokes around a fixed centre, drawn in cold light on black: something a person will actually send, and something a person receiving it will ask about. That question is the whole point.</p>
+  <p>Most ciphers produce noise: a wall of base64 nobody wants in their chat. SIGIL produces a mark. Rings of glyph strokes around a fixed centre, drawn in cold light on black. Something a person will actually send, and something the person receiving it will ask about. That question is the whole point.</p>
 
   <h2>Every letter rewrites the whole thing</h2>
-  <p>As you type, the entire circle re-forms on every keystroke. That is not an animation someone added for flourish: changing one character changes every byte underneath, so every ring genuinely does change. It is the encryption, made visible.</p>
+  <p>As you type, the entire circle re-forms on every keystroke. Nobody added that for flourish: changing one character changes every byte underneath, so every ring genuinely does change. You are watching the ciphertext move under your hands.</p>
 
   <h2>Open marks, and circles</h2>
-  <p>An <strong>open</strong> mark is readable by anyone who has SIGIL. That is how a mark travels, and it is the app's only advertisement. A <strong>circle</strong> is a key you and one person, or you and a group, exchange once, in person or through a channel you already trust. Marks written in a circle are readable only by the people holding that key. Whoever holds the key can both read and write; a circle is a shared room, not a one-way channel.</p>
+  <p><strong>An open mark is not private. Anyone with SIGIL can read it.</strong> That is how a mark travels, and it is the app's only advertisement. A <strong>circle</strong> is a key you and one person, or you and a group, exchange once, in person or over a channel you already trust. Marks written in a circle read only for the people holding that key. Whoever holds the key can both read and write; a circle is a shared room, not a one-way channel, so hand a key out the way you would hand out a spare key to a flat.</p>
 
   <h2>There is no decoder anywhere but the app</h2>
   <p>No web reader, no paste-in page, no API, no shortcut that hands back plaintext. If someone wants to read a mark, they install SIGIL. This is a deliberate constraint, not a missing feature.</p>
 
   <h2>Made on your iPhone</h2>
-  <p>The mark is drawn by a renderer that ships inside the app and runs on your device. Encryption is Apple's own CryptoKit, and keys live in the iOS Keychain and nowhere else. There is no cloud model, no Private Cloud Compute and no server of ours anywhere in the loop. It works in Airplane Mode. Please check.</p>
+  <p>A renderer we wrote draws the mark, on your device. Encryption is Apple's own CryptoKit, and keys live in the iOS Keychain and nowhere else. There is no cloud model, no Private Cloud Compute and no server of ours anywhere in the loop. It works in Airplane Mode. Please check.</p>
 
   <h2>Private by construction</h2>
   <ul>
@@ -89,8 +96,11 @@
     <li>The only way anything leaves your phone is the system share sheet, by your hand.</li>
   </ul>
 
-  <h2>Pricing</h2>
-  <p>Free is complete in kind: full render quality, real circles, real sharing, and reading open marks with no limit at all. It is limited in rate and depth. Your first circle is unlimited, everything else counts against 13 created marks a day, with two styles and your last 20 marks kept. Key backup and export are free at every tier, always: losing a phone must not destroy every circle you are in. SIGIL Premium is $3.99 monthly, $24.99 a year with a 7-day free trial for new subscribers, or a one-time $49.99 Lifetime purchase (family-shareable). Subscriptions auto-renew unless cancelled at least 24 hours before the period ends; manage them in Settings &rarr; Apple ID &rarr; Subscriptions. Restore purchases anytime.</p>
+  <h2>What SIGIL is not</h2>
+  <p>SIGIL is not an occult or manifestation tool. It is not a messenger or a social network either: it has no inbox, no contacts and no transport of its own, and sending a mark means handing an image to an app you already have. It is not a secure-messaging product. What you write in a circle is only as protected as the people you gave the key to, so do not use SIGIL for anything whose exposure would harm you.</p>
+
+  <h2>What free includes</h2>
+  <p>Free is complete in kind: full render quality, real circles, real sharing, and reading open marks with no limit. The first circle you make is unlimited too, to write in and to read. Past that, making a mark, or reading one in a second circle, counts against 13 a day, and you keep two inks and your last 20 marks. Key backup and export are free at every tier, always: losing a phone must not cost you every circle you are in. SIGIL Premium, which lifts the daily limit and adds inks, larger export and unlimited history, is available inside the app; the full terms are on the <a href="terms/" style="color:var(--accent)">Terms</a> page.</p>
 
   <h2>Questions</h2>
   <dl>
@@ -103,7 +113,7 @@
     <dt>Is this a messenger?</dt>
     <dd>No. SIGIL has no inbox, no contacts, no directory and no transport of its own. It makes an image; you send that image with whatever you already use.</dd>
     <dt>How long can a phrase be?</dt>
-    <dd>145 characters, the same for everyone. Paid does not buy you a longer phrase.</dd>
+    <dd>145 characters, the same for everyone. The paid tier does not buy you a longer phrase.</dd>
     <dt>What if I lose my phone?</dt>
     <dd>Export your keys before that happens; it is free and always available. Without a key there is no recovery, by design. We hold nothing.</dd>
   </dl>

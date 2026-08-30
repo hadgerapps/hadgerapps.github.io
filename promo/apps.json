@@ -1,5 +1,59 @@
 [
   {
+    "bundleId": "com.hadger.lumen",
+    "name": "Lumen",
+    "oneLiner": "Turns a daily energy check-in into private generated light on your widgets.",
+    "storeUrl": "https://apps.apple.com/app/id6796304123",
+    "iconUrl": "https://hadgerapps.github.io/lumen/apple-touch-icon.png",
+    "slug": "lumen",
+    "liveSince": null
+  },
+  {
+    "bundleId": "com.hadger.gnomon",
+    "name": "Gnomon",
+    "oneLiner": "Golden hour and blue hour for any spot, computed on your phone, on your Lock Screen.",
+    "storeUrl": "https://apps.apple.com/app/id6796772962",
+    "iconUrl": "https://hadgerapps.github.io/gnomon/apple-touch-icon.png",
+    "slug": "gnomon",
+    "liveSince": null
+  },
+  {
+    "bundleId": "com.hadger.fermata",
+    "name": "Fermata",
+    "oneLiner": "Records the quiet minutes you take, and draws each one as a field of light.",
+    "storeUrl": "https://apps.apple.com/app/id6799608420",
+    "iconUrl": "https://hadgerapps.github.io/fermata/apple-touch-icon.png",
+    "slug": "fermata",
+    "liveSince": null
+  },
+  {
+    "bundleId": "com.hadger.sigil",
+    "name": "SIGIL",
+    "oneLiner": "Turns a phrase into a luminous circular glyph that only the app can read back.",
+    "storeUrl": "https://apps.apple.com/app/id6804155479",
+    "iconUrl": "https://hadgerapps.github.io/sigil/apple-touch-icon.png",
+    "slug": "sigil",
+    "liveSince": "2026-08-26"
+  },
+  {
+    "bundleId": "com.hadger.aether",
+    "name": "Aether",
+    "oneLiner": "The goals and people that matter to you, as a slow private field on StandBy.",
+    "storeUrl": "https://apps.apple.com/app/id6797245563",
+    "iconUrl": "https://hadgerapps.github.io/aether/apple-touch-icon.png",
+    "slug": "aether",
+    "liveSince": "2026-08-21"
+  },
+  {
+    "bundleId": "com.hadger.firmament",
+    "name": "Firmament",
+    "oneLiner": "The real sky over any place and date, drawn as a plate you keep or give away.",
+    "storeUrl": "https://apps.apple.com/app/id6785449788",
+    "iconUrl": "https://hadgerapps.github.io/firmament/apple-touch-icon.png",
+    "slug": "firmament",
+    "liveSince": "2026-08-17"
+  },
+  {
     "bundleId": "com.hadger.hamon",
     "name": "Hamon",
     "oneLiner": "Cited heat treat schedules for knife steels, built to work offline at the forge.",
@@ -70,15 +124,6 @@
     "iconUrl": "https://hadgerapps.github.io/mortise/apple-touch-icon.png",
     "slug": "mortise",
     "liveSince": "2026-07-11"
-  },
-  {
-    "bundleId": "com.hadger.firmament",
-    "name": "Firmament",
-    "oneLiner": "The real sky over any place and date, drawn as a plate you keep or give away.",
-    "storeUrl": "https://apps.apple.com/app/id6785449788",
-    "iconUrl": "https://hadgerapps.github.io/firmament/apple-touch-icon.png",
-    "slug": "firmament",
-    "liveSince": "2026-07-06"
   },
   {
     "bundleId": "com.hadger.softday",

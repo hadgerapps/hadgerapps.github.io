@@ -14,6 +14,10 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SIGIL: a sentence, written as a circle">
 <meta name="twitter:description" content="Write a line of English and send it as a glowing circle. Anyone with SIGIL reads an open mark; marks written in a circle read only for the people holding its key.">
+<!-- Smart App Banner (W-1, 2026-09-03). Safari shows a system banner with the app's own
+     name, icon and Get control, so a receiver who lands here on an iPhone reaches the product
+     page in one tap without this page having to name a cost or a purchase verb. -->
+<meta name="apple-itunes-app" content="app-id=6804155479">
 <!-- This page is the destination of the in-app share caption (SPEC FR-14). It must return 200
      and must carry NO purchase language (3.1.1): no prices, no buy/subscribe verbs, no external
      checkout. Full pricing lives on /terms/ and on the App Store product page, which is where a
@@ -21,7 +25,12 @@
      SIGIL went on sale 2026-08-26 (id6804155479). The store link is carried by the generated
      "More from Hadger" block (build_web_mesh.py), same as every sibling page — a plain
      "Get SIGIL on the App Store" link, which is the format this contract anticipated and is
-     not purchase language. Do not hand-add a second CTA. -->
+     not purchase language.
+     SUPERSEDED 2026-09-03 (SPEC v1.1, W-1): the page now carries a SECOND store link, in the
+     receiver block above the fold, because the mesh CTA sits ~2600 px down and the person this
+     page has to serve arrived holding a picture they cannot read. Both links are the same plain
+     "Get SIGIL on the App Store" wording; they differ only in campaign token (hero ct=sigil-page,
+     mesh ct=hadger-web-page) so App Analytics can tell the two apart. Do not add a THIRD. -->
 <!-- FR-14 SHARE CAPTION CONTRACT (growth-lead, 2026-08-19). The app pre-fills exactly this
      string as the text item beside the image in the share sheet. The user can edit or delete it.
 
@@ -64,7 +73,99 @@
   nav a { color: var(--accent); text-decoration: none; margin-right: 14px; }
   footer { margin-top: 88px; font-size: 13px; color: var(--sub);
     padding-top: 24px; border-top: 1px solid var(--hairline); }
+  /* Receiver block (W-1). Above the fold on a 390-pt phone: the one visitor this page cannot
+     afford to lose is the person who was just sent a mark and does not know what it is. */
+  .receiver { margin: 24px 0 0; padding: 20px; background: var(--card);
+    border: 1px solid var(--hairline); border-radius: 14px; }
+  .receiver p { margin: 0 0 16px; color: var(--ink); font-size: 17px; }
+  a.cta { display: inline-block; min-height: 44px; padding: 12px 22px;
+    background: var(--accent); color: #101418; border-radius: 10px;
+    font-weight: 700; text-decoration: none; }
+  a.cta:hover, a.cta:focus { background: #EFC186; }
 </style>
+<!-- FAQPage structured data (W-1). Generated from the <dl> below, question for question:
+     Google requires the marked-up Q&A to be visible on the page, so this block and that list
+     must never drift. Regenerate, do not hand-edit. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the glowing circle someone sent me?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A sigil. Someone wrote a line of English in SIGIL and the app drew it as a ring of light. The words ride in the rings, so the picture is the message. Open that image in SIGIL and you get the sentence they wrote."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What app reads a circular symbol image?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SIGIL, the app that drew it. Save the picture, install SIGIL on your iPhone, then import the image from Photos, Files or the share sheet. An open mark reads for anyone with SIGIL. A mark written in a circle reads once you hold that circle’s key."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I decode a SIGIL glyph without the app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Reading happens inside SIGIL, on your own phone. There is no web reader and no paste-in page, and we will not add one."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does SIGIL need an account?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. There is no sign-up, no login, and no Sign in with Apple. Restoring a purchase needs no account either."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does the other person read it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "They install SIGIL and import the image from Photos, Files, or the share sheet. If it is an open mark, it reads. If it is a circle mark and they hold the key, it reads. If they do not hold the key, the app says so plainly and shows nothing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it work offline?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, entirely. Only the App Store needs a connection. Turn on Airplane Mode and use the whole app."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this a messenger?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. SIGIL has no inbox, no contacts, no directory and no transport of its own. It makes an image; you send that image with whatever you already use."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long can a phrase be?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "145 characters, the same for everyone. The paid tier does not buy you a longer phrase."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if I lose my phone?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Export your keys before that happens; it is free and always available. Without a key there is no recovery, by design. We hold nothing."
+      }
+    }
+  ]
+}
+</script>
 <link rel="stylesheet" href="/mesh.css">
 </head>
 <body>
@@ -73,6 +174,12 @@
   <p class="kicker">SIGIL</p>
   <h1>A sentence, written as a circle.</h1>
   <p class="lead">Write a line of English. SIGIL draws it as a <strong>luminous circular mark</strong> you send through any messenger as an ordinary image, and the person on the other end reads your exact words back inside the app.</p>
+
+  <section class="receiver" aria-label="For someone who was sent a sigil">
+    <p id="receiver-line">Someone sent you a circle. It reads back in English, on your own phone, inside this app and nowhere else.</p>
+    <p class="cta-wrap"><a class="cta" id="hero-cta" href="https://apps.apple.com/app/apple-store/id6804155479?pt=128850533&amp;ct=sigil-page&amp;mt=8">Get SIGIL on the App Store</a></p>
+  </section>
+
   <p class="sub">Made on your iPhone. No account, no server, no network in the loop.</p>
   <nav><a href="privacy/">Privacy</a> <a href="terms/">Terms</a> <a href="support/">Support</a></nav>
 
@@ -107,6 +214,12 @@
 
   <h2>Questions</h2>
   <dl>
+    <dt>What is the glowing circle someone sent me?</dt>
+    <dd>A sigil. Someone wrote a line of English in SIGIL and the app drew it as a ring of light. The words ride in the rings, so the picture is the message. Open that image in SIGIL and you get the sentence they wrote.</dd>
+    <dt>What app reads a circular symbol image?</dt>
+    <dd>SIGIL, the app that drew it. Save the picture, install SIGIL on your iPhone, then import the image from Photos, Files or the share sheet. An open mark reads for anyone with SIGIL. A mark written in a circle reads once you hold that circle&rsquo;s key.</dd>
+    <dt>Can I decode a SIGIL glyph without the app?</dt>
+    <dd>No. Reading happens inside SIGIL, on your own phone. There is no web reader and no paste-in page, and we will not add one.</dd>
     <dt>Does SIGIL need an account?</dt>
     <dd>No. There is no sign-up, no login, and no Sign in with Apple. Restoring a purchase needs no account either.</dd>
     <dt>How does the other person read it?</dt>
@@ -123,16 +236,16 @@
 
   <!-- hadger-mesh:start (generated by scripts/build_web_mesh.py) -->
 <section class="hadger-mesh" aria-labelledby="hadger-mesh-title">
-  <p class="hm-get"><a href="https://apps.apple.com/app/id6804155479?ct=hadger-web-page">Get SIGIL on the App Store</a></p>
+  <p class="hm-get"><a href="https://apps.apple.com/app/apple-store/id6804155479?pt=128850533&amp;ct=hadger-web-page&amp;mt=8">Get SIGIL on the App Store</a></p>
   <h2 id="hadger-mesh-title">More from Hadger</h2>
   <p class="hm-lede">Small, private iPhone apps from the same desk. Every one does its work on your own device.</p>
   <ul class="hm-list">
-    <li><a href="https://apps.apple.com/app/id6797245563?ct=hadger-web-mesh"><img class="hm-icon" src="/aether/apple-touch-icon.png" alt="" width="44" height="44" loading="lazy"><span class="hm-text"><span class="hm-name">Aether</span><span class="hm-line">The goals and people that matter to you, as a slow private field on StandBy.</span></span></a></li>
-    <li><a href="https://apps.apple.com/app/id6785449788?ct=hadger-web-mesh"><img class="hm-icon" src="/firmament/apple-touch-icon.png" alt="" width="44" height="44" loading="lazy"><span class="hm-text"><span class="hm-name">Firmament</span><span class="hm-line">The real sky over any place and date, drawn as a plate you keep or give away.</span></span></a></li>
-    <li><a href="https://apps.apple.com/app/id6793832673?ct=hadger-web-mesh"><img class="hm-icon" src="/hamon/apple-touch-icon.png" alt="" width="44" height="44" loading="lazy"><span class="hm-text"><span class="hm-name">Hamon</span><span class="hm-line">Cited heat treat schedules for knife steels, built to work offline at the forge.</span></span></a></li>
-    <li><a href="https://apps.apple.com/app/id6794660024?ct=hadger-web-mesh"><img class="hm-icon" src="/liminal/apple-touch-icon.png" alt="" width="44" height="44" loading="lazy"><span class="hm-text"><span class="hm-name">Liminal</span><span class="hm-line">Point your camera anywhere; Liminal turns the moment into a living Lock Screen.</span></span></a></li>
-    <li><a href="https://apps.apple.com/app/id6790344184?ct=hadger-web-mesh"><img class="hm-icon" src="/meridian/apple-touch-icon.png" alt="" width="44" height="44" loading="lazy"><span class="hm-text"><span class="hm-name">Meridian</span><span class="hm-line">Look up any perimenopause symptom and read what the evidence actually supports.</span></span></a></li>
-    <li><a href="https://apps.apple.com/app/id6791525023?ct=hadger-web-mesh"><img class="hm-icon" src="/vial/apple-touch-icon.png" alt="" width="44" height="44" loading="lazy"><span class="hm-text"><span class="hm-name">Vial</span><span class="hm-line">Your fragrance wardrobe, organized by note family, with a daily pick.</span></span></a></li>
+    <li><a href="https://apps.apple.com/app/apple-store/id6797245563?pt=128850533&amp;ct=hadger-web-mesh&amp;mt=8"><img class="hm-icon" src="/aether/apple-touch-icon.png" alt="" width="44" height="44" loading="lazy"><span class="hm-text"><span class="hm-name">Aether</span><span class="hm-line">The goals and people that matter to you, as a slow private field on StandBy.</span></span></a></li>
+    <li><a href="https://apps.apple.com/app/apple-store/id6785449788?pt=128850533&amp;ct=hadger-web-mesh&amp;mt=8"><img class="hm-icon" src="/firmament/apple-touch-icon.png" alt="" width="44" height="44" loading="lazy"><span class="hm-text"><span class="hm-name">Firmament</span><span class="hm-line">The real sky over any place and date, drawn as a plate you keep or give away.</span></span></a></li>
+    <li><a href="https://apps.apple.com/app/apple-store/id6793832673?pt=128850533&amp;ct=hadger-web-mesh&amp;mt=8"><img class="hm-icon" src="/hamon/apple-touch-icon.png" alt="" width="44" height="44" loading="lazy"><span class="hm-text"><span class="hm-name">Hamon</span><span class="hm-line">Cited heat treat schedules for knife steels, built to work offline at the forge.</span></span></a></li>
+    <li><a href="https://apps.apple.com/app/apple-store/id6794660024?pt=128850533&amp;ct=hadger-web-mesh&amp;mt=8"><img class="hm-icon" src="/liminal/apple-touch-icon.png" alt="" width="44" height="44" loading="lazy"><span class="hm-text"><span class="hm-name">Liminal</span><span class="hm-line">Point your camera anywhere; Liminal turns the moment into a living Lock Screen.</span></span></a></li>
+    <li><a href="https://apps.apple.com/app/apple-store/id6790344184?pt=128850533&amp;ct=hadger-web-mesh&amp;mt=8"><img class="hm-icon" src="/meridian/apple-touch-icon.png" alt="" width="44" height="44" loading="lazy"><span class="hm-text"><span class="hm-name">Meridian</span><span class="hm-line">Look up any perimenopause symptom and read what the evidence actually supports.</span></span></a></li>
+    <li><a href="https://apps.apple.com/app/apple-store/id6791525023?pt=128850533&amp;ct=hadger-web-mesh&amp;mt=8"><img class="hm-icon" src="/vial/apple-touch-icon.png" alt="" width="44" height="44" loading="lazy"><span class="hm-text"><span class="hm-name">Vial</span><span class="hm-line">Your fragrance wardrobe, organized by note family, with a daily pick.</span></span></a></li>
   </ul>
   <p class="hm-all"><a href="/">See all 26 Hadger apps</a></p>
 </section>

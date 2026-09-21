@@ -1,0 +1,15 @@
+/* Scaffold palette — mirrors the placeholder DS tokens; /design-system retunes both. */
+:root{--ground:#F7F5F2;--ink:#1B1A18;--soft:#55524C;--accent:#2F5D8A;--rule:#E4E0DA}
+@media (prefers-color-scheme:dark){:root{--ground:#151412;--ink:#F1EEE9;--soft:#B9B4AB;--accent:#8DB7E0;--rule:#34322E}}
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font-family:ui-rounded,-apple-system,system-ui,sans-serif;line-height:1.6;margin:0;padding:0}
+.wrap{max-width:680px;margin:0 auto;padding:48px 24px 80px}
+h1{font-weight:800;letter-spacing:-0.01em;margin:0 0 4px}
+h2{margin:36px 0 8px;font-size:1.15rem}
+.kicker{text-transform:uppercase;letter-spacing:.14em;font-size:.72rem;color:var(--soft)}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--rule)}
+p,li{color:var(--soft)}
+nav{margin-top:40px;padding-top:20px;border-top:1px solid var(--rule);font-size:.85rem}
+nav a{margin-right:18px}
+footer{margin-top:48px;color:var(--soft);font-size:.8rem}
+.note{font-size:.85rem}

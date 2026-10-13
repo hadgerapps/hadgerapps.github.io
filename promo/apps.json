@@ -1,32 +1,5 @@
 [
   {
-    "bundleId": "com.hadger.lumen",
-    "name": "Lumen",
-    "oneLiner": "Turns a daily energy check-in into private generated light on your widgets.",
-    "storeUrl": "https://apps.apple.com/app/id6796304123",
-    "iconUrl": "https://hadgerapps.github.io/lumen/apple-touch-icon.png",
-    "slug": "lumen",
-    "liveSince": null
-  },
-  {
-    "bundleId": "com.hadger.gnomon",
-    "name": "Gnomon",
-    "oneLiner": "Golden hour and blue hour for any spot, computed on your phone, on your Lock Screen.",
-    "storeUrl": "https://apps.apple.com/app/id6796772962",
-    "iconUrl": "https://hadgerapps.github.io/gnomon/apple-touch-icon.png",
-    "slug": "gnomon",
-    "liveSince": null
-  },
-  {
-    "bundleId": "com.hadger.fermata",
-    "name": "Fermata",
-    "oneLiner": "Records the quiet minutes you take, and draws each one as a field of light.",
-    "storeUrl": "https://apps.apple.com/app/id6799608420",
-    "iconUrl": "https://hadgerapps.github.io/fermata/apple-touch-icon.png",
-    "slug": "fermata",
-    "liveSince": null
-  },
-  {
     "bundleId": "com.hadger.sigil",
     "name": "SIGIL",
     "oneLiner": "Turns a phrase into a luminous circular glyph that only the app can read back.",
@@ -36,6 +9,33 @@
     "liveSince": "2026-08-26"
   },
   {
+    "bundleId": "com.hadger.lumen",
+    "name": "Lumen",
+    "oneLiner": "Turns a daily energy check-in into private generated light on your widgets.",
+    "storeUrl": "https://apps.apple.com/app/id6796304123",
+    "iconUrl": "https://hadgerapps.github.io/lumen/apple-touch-icon.png",
+    "slug": "lumen",
+    "liveSince": "2026-08-26"
+  },
+  {
+    "bundleId": "com.hadger.fermata",
+    "name": "Fermata",
+    "oneLiner": "Records the quiet minutes you take, and draws each one as a field of light.",
+    "storeUrl": "https://apps.apple.com/app/id6799608420",
+    "iconUrl": "https://hadgerapps.github.io/fermata/apple-touch-icon.png",
+    "slug": "fermata",
+    "liveSince": "2026-08-26"
+  },
+  {
+    "bundleId": "com.hadger.gnomon",
+    "name": "Gnomon",
+    "oneLiner": "Golden hour and blue hour for any spot, computed on your phone, on your Lock Screen.",
+    "storeUrl": "https://apps.apple.com/app/id6796772962",
+    "iconUrl": "https://hadgerapps.github.io/gnomon/apple-touch-icon.png",
+    "slug": "gnomon",
+    "liveSince": "2026-08-24"
+  },
+  {
     "bundleId": "com.hadger.aether",
     "name": "Aether",
     "oneLiner": "The goals and people that matter to you, as a slow private field on StandBy.",
@@ -43,15 +43,6 @@
     "iconUrl": "https://hadgerapps.github.io/aether/apple-touch-icon.png",
     "slug": "aether",
     "liveSince": "2026-08-21"
-  },
-  {
-    "bundleId": "com.hadger.firmament",
-    "name": "Firmament",
-    "oneLiner": "The real sky over any place and date, drawn as a plate you keep or give away.",
-    "storeUrl": "https://apps.apple.com/app/id6785449788",
-    "iconUrl": "https://hadgerapps.github.io/firmament/apple-touch-icon.png",
-    "slug": "firmament",
-    "liveSince": "2026-08-17"
   },
   {
     "bundleId": "com.hadger.hamon",
@@ -72,6 +63,15 @@
     "liveSince": "2026-08-06"
   },
   {
+    "bundleId": "com.hadger.vial",
+    "name": "Vial",
+    "oneLiner": "Your fragrance wardrobe, organized by note family, with a daily pick.",
+    "storeUrl": "https://apps.apple.com/app/id6791525023",
+    "iconUrl": "https://hadgerapps.github.io/vial/apple-touch-icon.png",
+    "slug": "vial",
+    "liveSince": "2026-07-24"
+  },
+  {
     "bundleId": "com.hadger.meridian",
     "name": "Meridian",
     "oneLiner": "Look up any perimenopause symptom and read what the evidence actually supports.",
@@ -79,15 +79,6 @@
     "iconUrl": "https://hadgerapps.github.io/meridian/apple-touch-icon.png",
     "slug": "meridian",
     "liveSince": "2026-07-24"
-  },
-  {
-    "bundleId": "com.hadger.vial",
-    "name": "Vial",
-    "oneLiner": "Your fragrance wardrobe, organized by note family, with a daily pick.",
-    "storeUrl": "https://apps.apple.com/app/id6791525023",
-    "iconUrl": "https://hadgerapps.github.io/vial/apple-touch-icon.png",
-    "slug": "vial",
-    "liveSince": "2026-07-23"
   },
   {
     "bundleId": "com.hadger.aplomb",
@@ -99,22 +90,13 @@
     "liveSince": "2026-07-19"
   },
   {
-    "bundleId": "com.hadger.morsel",
-    "name": "Morsel",
-    "oneLiner": "Log meals the lazy way, and see which foods your body actually reacts to.",
-    "storeUrl": "https://apps.apple.com/app/id6779900084",
-    "iconUrl": "https://hadgerapps.github.io/morsel/apple-touch-icon.png",
-    "slug": "morsel",
-    "liveSince": "2026-07-18"
-  },
-  {
     "bundleId": "com.hadger.trivet",
     "name": "Trivet",
     "oneLiner": "Photograph a handwritten recipe; get back a clean card you can cook from.",
     "storeUrl": "https://apps.apple.com/app/id6790121828",
     "iconUrl": "https://hadgerapps.github.io/trivet/apple-touch-icon.png",
     "slug": "trivet",
-    "liveSince": "2026-07-12"
+    "liveSince": "2026-07-17"
   },
   {
     "bundleId": "com.hadger.mortise",
@@ -123,16 +105,7 @@
     "storeUrl": "https://apps.apple.com/app/id6789624824",
     "iconUrl": "https://hadgerapps.github.io/mortise/apple-touch-icon.png",
     "slug": "mortise",
-    "liveSince": "2026-07-11"
-  },
-  {
-    "bundleId": "com.hadger.softday",
-    "name": "Soft Day",
-    "oneLiner": "A kind journal for hard days: write one good moment, get gentle support back.",
-    "storeUrl": "https://apps.apple.com/app/id6769456388",
-    "iconUrl": "https://hadgerapps.github.io/softday/apple-touch-icon.png",
-    "slug": "softday",
-    "liveSince": "2026-07-02"
+    "liveSince": "2026-07-16"
   },
   {
     "bundleId": "com.hadger.lila",
@@ -141,16 +114,7 @@
     "storeUrl": "https://apps.apple.com/app/id6786273693",
     "iconUrl": "https://hadgerapps.github.io/lila/apple-touch-icon.png",
     "slug": "lila",
-    "liveSince": "2026-07-02"
-  },
-  {
-    "bundleId": "com.hadger.cushion",
-    "name": "Cushion",
-    "oneLiner": "One number, once a day: how much is safe to spend before payday. No bank link.",
-    "storeUrl": "https://apps.apple.com/app/id6777035082",
-    "iconUrl": "https://hadgerapps.github.io/cushion/apple-touch-icon.png",
-    "slug": "cushion",
-    "liveSince": "2026-07-01"
+    "liveSince": "2026-07-09"
   },
   {
     "bundleId": "com.hadger.foolscap",
@@ -159,16 +123,7 @@
     "storeUrl": "https://apps.apple.com/app/id6785649689",
     "iconUrl": "https://hadgerapps.github.io/foolscap/apple-touch-icon.png",
     "slug": "foolscap",
-    "liveSince": "2026-06-30"
-  },
-  {
-    "bundleId": "com.hadger.ruse",
-    "name": "Ruse",
-    "oneLiner": "One clever logic puzzle each morning, composed on your iPhone. Fully offline.",
-    "storeUrl": "https://apps.apple.com/app/id6785173718",
-    "iconUrl": "https://hadgerapps.github.io/ruse/apple-touch-icon.png",
-    "slug": "ruse",
-    "liveSince": "2026-06-29"
+    "liveSince": "2026-07-07"
   },
   {
     "bundleId": "com.hadger.sift",
@@ -177,7 +132,16 @@
     "storeUrl": "https://apps.apple.com/app/id6779903351",
     "iconUrl": "https://hadgerapps.github.io/sift/apple-touch-icon.png",
     "slug": "sift",
-    "liveSince": "2026-06-26"
+    "liveSince": "2026-07-06"
+  },
+  {
+    "bundleId": "com.hadger.ruse",
+    "name": "Ruse",
+    "oneLiner": "One clever logic puzzle each morning, composed on your iPhone. Fully offline.",
+    "storeUrl": "https://apps.apple.com/app/id6785173718",
+    "iconUrl": "https://hadgerapps.github.io/ruse/apple-touch-icon.png",
+    "slug": "ruse",
+    "liveSince": "2026-07-05"
   },
   {
     "bundleId": "com.hadger.foray",
@@ -186,7 +150,16 @@
     "storeUrl": "https://apps.apple.com/app/id6784655171",
     "iconUrl": "https://hadgerapps.github.io/foray/apple-touch-icon.png",
     "slug": "foray",
-    "liveSince": "2026-06-26"
+    "liveSince": "2026-07-04"
+  },
+  {
+    "bundleId": "com.hadger.firmament",
+    "name": "Firmament",
+    "oneLiner": "The real sky over any place and date, drawn as a plate you keep or give away.",
+    "storeUrl": "https://apps.apple.com/app/id6785449788",
+    "iconUrl": "https://hadgerapps.github.io/firmament/apple-touch-icon.png",
+    "slug": "firmament",
+    "liveSince": "2026-07-03"
   },
   {
     "bundleId": "com.hadger.culprit",
@@ -195,7 +168,25 @@
     "storeUrl": "https://apps.apple.com/app/id6783813841",
     "iconUrl": "https://hadgerapps.github.io/culprit/apple-touch-icon.png",
     "slug": "culprit",
-    "liveSince": "2026-06-24"
+    "liveSince": "2026-06-30"
+  },
+  {
+    "bundleId": "com.hadger.morsel",
+    "name": "Morsel",
+    "oneLiner": "Log meals the lazy way, and see which foods your body actually reacts to.",
+    "storeUrl": "https://apps.apple.com/app/id6779900084",
+    "iconUrl": "https://hadgerapps.github.io/morsel/apple-touch-icon.png",
+    "slug": "morsel",
+    "liveSince": "2026-06-23"
+  },
+  {
+    "bundleId": "com.hadger.cushion",
+    "name": "Cushion",
+    "oneLiner": "One number, once a day: how much is safe to spend before payday. No bank link.",
+    "storeUrl": "https://apps.apple.com/app/id6777035082",
+    "iconUrl": "https://hadgerapps.github.io/cushion/apple-touch-icon.png",
+    "slug": "cushion",
+    "liveSince": "2026-06-22"
   },
   {
     "bundleId": "com.hadger.almanac",
@@ -204,7 +195,7 @@
     "storeUrl": "https://apps.apple.com/app/id6776374110",
     "iconUrl": "https://hadgerapps.github.io/almanac/apple-touch-icon.png",
     "slug": "almanac",
-    "liveSince": "2026-06-05"
+    "liveSince": "2026-06-09"
   },
   {
     "bundleId": "com.hadger.pause",
@@ -216,6 +207,15 @@
     "liveSince": "2026-06-03"
   },
   {
+    "bundleId": "com.hadger.pith",
+    "name": "Pith Voice",
+    "oneLiner": "Speak for a few minutes; your iPhone finds the pith of it and keeps it there.",
+    "storeUrl": "https://apps.apple.com/app/id6770544476",
+    "iconUrl": "https://hadgerapps.github.io/pith/apple-touch-icon.png",
+    "slug": "pith",
+    "liveSince": "2026-06-01"
+  },
+  {
     "bundleId": "com.hadger.wake",
     "name": "Wake",
     "oneLiner": "Reads the sleep your Apple Watch already recorded, and says why you woke up tired.",
@@ -225,12 +225,12 @@
     "liveSince": "2026-05-29"
   },
   {
-    "bundleId": "com.hadger.pith",
-    "name": "Pith Voice",
-    "oneLiner": "Speak for a few minutes; your iPhone finds the pith of it and keeps it there.",
-    "storeUrl": "https://apps.apple.com/app/id6770544476",
-    "iconUrl": "https://hadgerapps.github.io/pith/apple-touch-icon.png",
-    "slug": "pith",
-    "liveSince": "2026-05-29"
+    "bundleId": "com.hadger.softday",
+    "name": "Soft Day",
+    "oneLiner": "A kind journal for hard days: write one good moment, get gentle support back.",
+    "storeUrl": "https://apps.apple.com/app/id6769456388",
+    "iconUrl": "https://hadgerapps.github.io/softday/apple-touch-icon.png",
+    "slug": "softday",
+    "liveSince": "2026-05-26"
   }
 ]

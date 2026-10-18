@@ -1,15 +1,40 @@
-/* Scaffold palette — mirrors the placeholder DS tokens; /design-system retunes both. */
-:root{--ground:#F7F5F2;--ink:#1B1A18;--soft:#55524C;--accent:#2F5D8A;--rule:#E4E0DA}
-@media (prefers-color-scheme:dark){:root{--ground:#151412;--ink:#F1EEE9;--soft:#B9B4AB;--accent:#8DB7E0;--rule:#34322E}}
+/* Sampler's web pages wear the app's chrome (PM ruling R118, design note item 4; P4g.md § 7).
+   Every value is a shipped token: Assets.xcassets/Colors and DesignSystem/*.swift, never tokens.json.
+   Black aida ground with the chrome weave at the 14-ct pitch; words on an opaque raised plate, so no word
+   sits on the weave (DS.Colors.panel rule); labels and titles in the monospace stack (R2); gold only as the
+   line under a link and the focus ring (R4). Text sizes follow Safari's text size via -apple-system-body. */
+:root{
+  color-scheme:dark;
+  --cloth:#050506;            /* DS.Colors.cloth */
+  --raised:#0E0E10;           /* DS.Colors.clothRaised */
+  --filament:#FFF3D0;         /* DS.Colors.filament   17.43:1 on raised */
+  --chalk:#B9B7B2;            /* DS.Colors.chalk       9.62:1 on raised */
+  --muted:#8E8B84;            /* DS.Colors.muted       5.67:1 on raised */
+  --gold:#E8B54A;             /* DS.Colors.gold: a line, never a fill */
+  --rim:rgba(236,234,229,.40);/* DS.Colors.rim */
+  --pitch:10.7px;             /* DS.Aida.groundPitchDefault: 150 / 14 ct */
+  /* spacing: DS.Spacing sm 12, md 16, lg 24, xl 32, xxl 48, calm 64; radius DS.Radii.panel 4 */
+  --prose:-apple-system,system-ui,"Helvetica Neue",Arial,sans-serif;
+  --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
+}
+@media (prefers-contrast:more){:root{--filament:#FFF8E6;--chalk:#DDDBD6;--muted:#B5B2AB;--gold:#FFD27A;--rim:rgba(255,255,255,.55)}}
 *{box-sizing:border-box}
-body{background:var(--ground);color:var(--ink);font-family:ui-rounded,-apple-system,system-ui,sans-serif;line-height:1.6;margin:0;padding:0}
-.wrap{max-width:680px;margin:0 auto;padding:48px 24px 80px}
-h1{font-weight:800;letter-spacing:-0.01em;margin:0 0 4px}
-h2{margin:36px 0 8px;font-size:1.15rem}
-.kicker{text-transform:uppercase;letter-spacing:.14em;font-size:.72rem;color:var(--soft)}
-a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--rule)}
-p,li{color:var(--soft)}
-nav{margin-top:40px;padding-top:20px;border-top:1px solid var(--rule);font-size:.85rem}
-nav a{margin-right:18px}
-footer{margin-top:48px;color:var(--soft);font-size:.8rem}
-.note{font-size:.85rem}
+html{background-color:var(--cloth);
+  /* one tile: a block at blockFraction 0.72 in weaveBlock, its lit top and leading edge (blockEdgeWidth 0.5)
+     in weaveEdge, the hole at the corner in weaveHole */
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10.7' height='10.7'%3E%3Crect width='7.7' height='7.7' fill='%23ECEAE5' fill-opacity='.045'/%3E%3Crect width='7.7' height='.5' fill='%23ECEAE5' fill-opacity='.08'/%3E%3Crect width='.5' height='7.7' fill='%23ECEAE5' fill-opacity='.08'/%3E%3Crect x='7.7' y='7.7' width='3' height='3' fill='%23000'/%3E%3C/svg%3E");
+  background-size:var(--pitch) var(--pitch)}
+body{margin:0;padding:0;color:var(--chalk);font-size:17px;font-family:var(--prose);line-height:1.55;-webkit-text-size-adjust:100%}
+.wrap{overflow-wrap:anywhere;max-width:640px;margin:48px auto 64px;padding:32px;background:var(--raised);border:1px solid var(--rim);border-radius:4px}
+@media (max-width:719px){.wrap{margin:24px 12px 48px;padding:24px}}
+.kicker{font-family:var(--mono);margin:0 0 .5em;color:var(--chalk);font-size:.65em;letter-spacing:.145em;text-transform:uppercase}
+h1{font-family:var(--mono);margin:0 0 .75em;color:var(--filament);font-size:1.3em;line-height:1.3;font-weight:600}
+h2{font-family:var(--mono);margin:2em 0 .5em;color:var(--filament);font-size:.76em;letter-spacing:.12em;text-transform:uppercase;font-weight:600}
+p,li{color:var(--chalk);margin:0 0 .75em}
+a{color:var(--filament);text-decoration:underline;text-decoration-color:var(--gold);text-decoration-thickness:1px;text-underline-offset:.25em}
+a:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+nav{font-family:var(--mono);margin-top:2em;padding-top:1em;border-top:1px solid var(--rim);font-size:.76em}
+nav a{display:inline-block;min-height:44px;line-height:44px;margin-right:1.4em}
+footer{font-family:var(--mono);margin-top:2.4em;color:var(--muted);font-size:.7em}
+.note{font-family:var(--mono);font-size:.76em;color:var(--muted)}
+@supports (-webkit-touch-callout:none){body{font:-apple-system-body;font-family:var(--prose);line-height:1.55}}
